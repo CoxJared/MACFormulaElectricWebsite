@@ -1,0 +1,108 @@
+#main-showcase-container {
+  width:1200px;
+  height:100%;
+  margin: 0 auto;
+  display:flex;
+  position:fixed
+  /* border:2px solid blue; */
+ /* background:#000; */
+}
+
+  .image-container{
+    position: relative;
+    left:120px;
+    /* right:300px; */
+    width:750px;
+    height:700px;
+    margin-top:140px;
+    /* border:2px solid red; */
+  }
+
+    #image-full {
+      position: absolute;
+      width:750px;
+      max-width:750px;
+      min-width:420px;
+      height:700px;
+      /* border:2px solid blue; */
+      background: url('./../../../img/renders/front-full-2019.png');
+      background-size: cover;
+    }
+
+    .image-cut{
+      position: absolute;
+      width:750px;
+      height:700px;
+      /* border:2px solid blue; */
+      background: url('./../../../img/renders/cut-away-render.png');
+      background-size: cover;
+    }
+
+
+  #text-container{
+    position: absolute;
+    right:-350px;
+    width:600px;
+    height:500px;
+    min-height:500px;
+    max-height:2000px;
+    bottom:100px;
+    /* margin-top:340px; */
+    /* border:2px solid green; */
+  }
+
+    .car-description{
+      font-size:25px;
+      font-weight:500;
+      color:#aaa;
+      text-align: justify;
+      line-height: 1.5em;
+    }
+
+  #main-specs {
+    position: absolute;
+    width:0px;
+    opacity:0;
+    max-width:600px;
+    height:500px;
+    right:-300px;
+    top:200px;
+    color:#ddd;
+    /* border:2px solid blue; */
+  }
+
+    .specs-heading{
+      font-size: 50px;
+      margin:40px 0;
+    }
+
+    #spec {
+      width:600px;
+
+      height:50px;
+      max-height:50px;
+      display: flex;
+      margin-top:20px;
+      /* border:1px solid red; */
+      border-bottom:1px solid #444;
+    }
+
+      .spec-title {
+        /* border:1px solid #bbb; */
+        width:300px;
+        font-size: 25px;
+        font-weight:300;
+      }
+
+      .spec-value{
+        width:300px;
+        height:100px;
+        /* border:1px solid blue; */
+        float:right;
+        text-align: right;
+      }
+
+      .spec-value span{
+        font-weight: lighter;
+        color:#777;
+      }

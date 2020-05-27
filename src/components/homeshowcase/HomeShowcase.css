@@ -1,0 +1,66 @@
+.showcase-container{
+    height:100vh;
+    width:1310px;
+
+    margin:auto;
+   
+}
+.showcase-container::after {
+    content: "";
+  position: absolute;
+    background: url('./../../img/renders/showcase-test.JPG');
+    object-fit:cover;
+  height:100%;
+  width:100%;
+  background-position-y: 0px;
+  background-size: cover;
+
+  background-position: 20%;
+  opacity: 0.95;
+}
+
+    .showcase-image-container{
+        width:600px;
+        height:600px;
+        margin-top:100px;
+        float:left;
+        /* border:1px solid green; */
+    }
+        .showcase-image{
+            width:100%;
+            padding-top:50px;
+        }
+
+    .showcase-title-container{
+        width:700px;
+        height:100vh;
+        float:right;
+        /* border:2px solid pink; */
+
+    }
+        .main-title{
+           text-align: center; 
+           font-family: 'Rajdhani', sans-serif;
+           font-size:55px;
+           width:700px;
+           margin-top:200px;
+        }
+
+        .sub-title{
+            text-align:center;
+            width:700px;
+            color:#222;
+            font-weight: lighter;
+            margin-top:0px;
+            float:right;
+        }
+    
+    .showcase-title-container-2{
+        width:700px;
+        height:100vh;
+        float:right;
+        border:2px solid pink;
+        background-color:rgb(147, 246, 200);
+
+    }
+        
