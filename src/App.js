@@ -13,6 +13,8 @@ function App() {
         <div className="app">
             <Route exact path="/" 
                 component={CarsPage} />
+            <Route exact path="/cars"
+              component={CarsPage} />
         </div>
     </Router>
   );

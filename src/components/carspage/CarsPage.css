@@ -1,3 +1,6 @@
 .cars-container {
-  height:30000px;
+  height:5000px;
+  width:100%;
+  position: relative;
+  overflow:hidden; 
 }
