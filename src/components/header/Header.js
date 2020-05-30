@@ -13,9 +13,16 @@ class Header extends Component{
     {
         return ""
     }
+
+    componentDidMount () {
+        (document.getElementById("header-container")).style.opacity=1;
+    }
     
 
     render() {
+        
+        
+
         var headerClass = "static-header";
         if( document.body.offsetWidth>800){
             headerClass = "header"
@@ -100,5 +107,7 @@ class Header extends Component{
         );
     }
 }
+
+
 
 export default Header;

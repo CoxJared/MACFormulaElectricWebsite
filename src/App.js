@@ -8,11 +8,12 @@ import CarsPage from './components/carspage/CarsPage';
 
 function App() {
   return (
+    
     <Router>
       <link href="https://fonts.googleapis.com/css?family=Rajdhani:520,600|Ubuntu&display=swap" rel="stylesheet"/>
         <div className="app">
             <Route exact path="/" 
-                component={CarsPage} />
+                component={HomePage} />
             <Route exact path="/cars"
               component={CarsPage} />
         </div>

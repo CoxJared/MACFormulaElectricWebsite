@@ -10,6 +10,25 @@ export class MainShowcase extends Component {
     super(props)
   }
 
+  componentDidMount() {
+    this.initialLoad()
+  }
+
+  initialLoad() {
+    
+    setTimeout(function(){
+      document.getElementById("static-scrolling-container").style.opacity=1
+      document.getElementById("text-container").style.top='260px';
+
+      setTimeout(function(){
+        try{
+        document.getElementById("text-container").style.transition='0s';
+        } catch{}
+      },2000);
+    }, 100);
+    
+  }
+
   render() {
     window.onscroll = function() {
       let delay=300;
@@ -45,7 +64,7 @@ export class MainShowcase extends Component {
     }
 
     return (
-      <div className="static-scrolling-container">
+      <div id="static-scrolling-container">
         <div id="main-showcase-container">
           <div className="image-container">
             <div className="image-cut"></div>

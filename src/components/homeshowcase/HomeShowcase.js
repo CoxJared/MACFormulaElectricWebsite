@@ -1,33 +1,117 @@
 import React, { Component } from 'react'
 import './HomeShowcase.css';
-import crosssectionrender from './../../img/renders/front-cross-section.png';
 
-import {Link, animateScroll, scroll} from 'react-scroll'
+import darkImage from './../../img/renders/red-front-new.png';
+import lightImage from './../../img/renders/home-lit.png';
+import arrow from './../../img/arrow.png'
 
 export class HomeShowcase extends Component {
-    render() {
-        return (
-            <div>
-                <Link 
-                activeClass="active"
-                to="selection1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}/>
-            <div className="showcase-container">
-                {/* <div className="showcase-image-container">
-                <img className='showcase-image' src={crosssectionrender}/>
-                </div> */}
-                <div className="showcase-title-container">
-                    <h1 className="main-title">INSPIRING A CULTURE OF INNOVATION</h1>
-                    <h1 className="sub-title">a multidisciplinary project that brings together the most passionate students to work towards a common goal.</h1>
-                </div>
-            </div>
+
+        constructor(props) {
+            super(props)
+            this.state ={
+              leave:false
+            }
+          }
+        
+          componentDidMount() {
+            window.scrollTo(0, 0)
+        
+            this.updateElements()
+            this.moveArrow()
+          } 
+        
+          updateElements() {
+            setTimeout(
+                function(){
+            //text appear
+            (document.getElementById("landing-title-container")).style.opacity="1";
+            (document.getElementById("landing-title-container")).style.top="360px";
+            (document.getElementById("landing-subtitle")).style.marginTop="0px";
             
-            </div>
-        )
-    }
+            //image fade in
+            (document.getElementById("landing-image-container")).style.opacity="1";
+                }, 1000)
+          }
+        
+          moveArrow() { 
+            setTimeout(
+            function(){
+              document.getElementById("enter-arrow").style.top="50px"
+              document.getElementById("enter-arrow").style.opacity="1"
+              setTimeout(
+                  function(){
+                      document.getElementById("enter-arrow").style.opacity="0"},1000);
+                  },4000)
+          }
+        
+          updateShowcase = () => {
+            (document.getElementById("landing-image-dark")).style.opacity= 0;
+            (document.getElementById("landing-title-container")).style.opacity= 0;
+            (document.getElementById("landing-title-container")).style.top= '00px';
+            (document.getElementById("landing-image-container")).style.width= '1550px';
+
+            this.props.DidEnter()
+          }
+
+          unfixPage = () => {
+            (document.getElementById("landing-page-container")).style.position= 'relative';
+            (document.getElementById("landing-page-container")).style.top= '300px';
+          }
+
+          fixPage = () => {
+            (document.getElementById("landing-page-container")).style.position= 'fixed';
+            (document.getElementById("landing-page-container")).style.top= '0px';
+          }
+
+          checkScrolling = () => {
+            //if scroll down
+            window.onscroll = () => {
+
+                //updateShowcase
+                if(window.pageYOffset > 90){
+                  this.updateShowcase()
+                }
+                else{
+                  (document.getElementById("landing-image-dark")).style.opacity= 1;
+                  (document.getElementById("landing-title-container")).style.opacity="1";
+                  (document.getElementById("landing-title-container")).style.top="360px";
+                }
+  
+                //unfix page
+                if(window.pageYOffset > 300){
+                  this.unfixPage()
+                }
+                else{
+                  this.fixPage()
+                }
+              }
+          }
+        
+          render() {
+        
+            this.checkScrolling()
+
+        
+              
+            return (
+              <div className="landing-ether">
+              <div id="landing-page-container">
+                <div id="landing-image-container">
+                  <img id="landing-image" src={lightImage}/>
+                  <img id="landing-image-dark" src={darkImage}/>
+                </div>
+                <div id="landing-title-container">
+                  <h1 className="landing-title">MAC Formula Electric</h1>
+                  <h2 id="landing-subtitle">Inspiring a Culture of Innovation</h2>
+                </div>
+                <div className="enter-arrow-container" onClick={this.moveLanding}>
+                  <img id="enter-arrow" src={arrow}></img>
+                </div>
+              </div>
+              </div>
+            )
+          }
 }
 
 export default HomeShowcase

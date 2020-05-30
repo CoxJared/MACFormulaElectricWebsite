@@ -4,8 +4,10 @@
     margin:0 auto;
     align-content: center;
     position: fixed;
-    z-index: 50; 
-    /* border:1px solid red; */
+    z-index: 500; 
+    opacity: 1;
+    transition: 1.5s;
+    /* border: 1px solid red; */
 }
 
 #header  {

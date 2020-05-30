@@ -37,11 +37,11 @@ export class DesignShowcase extends Component {
 
     //checking if the design container is inside viewport, whenever scroll happens
     window.addEventListener('scroll', function (event) {
-      var bounding = document.querySelector('.design-container').getBoundingClientRect();
+      
 
       //TODO: fix these exceptions
       try{
-
+        var bounding = document.querySelector('.design-container').getBoundingClientRect();
         let halfHeight = 400
         if (
           bounding.top >= 0 &&

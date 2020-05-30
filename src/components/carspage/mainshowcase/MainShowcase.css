@@ -1,6 +1,8 @@
-.static-scrolling-container{
+#static-scrolling-container{
   width:100%;
   height: calc(100vh + 1200px);
+  opacity: 0;
+  transition: 2s ease-in-out;
 }
 
 #main-showcase-container {
@@ -49,7 +51,8 @@
     height:500px;
     min-height:500px;
     max-height:2000px;
-    top:260px;
+    top:360px;
+    transition: 2s;
     /* margin-top:340px; */
     /* border:2px solid green; */
   }
