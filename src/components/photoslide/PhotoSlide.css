@@ -27,7 +27,7 @@
 
   #description-container{
     position: relative;
-    width: 500px;
+    width: 600px;
     height:500px;
     top:100px;
     transition: .6s;
@@ -37,7 +37,7 @@
     #photoslide-title{
       color:#eee;
       width:100%;
-      font-size:65px;
+      font-size:55px;
       text-align: left;
       padding:70px 0 0 30px;
 

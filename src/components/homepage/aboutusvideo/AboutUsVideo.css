@@ -1,0 +1,64 @@
+#about-us-container{
+  width:100%;
+  position: relative;
+  overflow: hidden;
+  height:100vh;
+  /* max-height:100vh; */
+  opacity:0;
+  transition:4s;
+  justify-content: center;
+}
+
+  #about-us-photo{
+width: 110%;
+left:0;
+position:absolute;
+bottom:0;
+opacity: .7;
+transition:15s;
+  }
+  .play-button-container{
+    width:400px;
+    height:400px;
+    position: relative;
+    margin-top:40vh;
+    margin-left:calc(50vw - 200px);
+    /* border:2px solid blue; */
+    align-items: center;
+  }
+
+  .play-button{
+    position: relative;
+    width: 240px;
+    margin-left: 65px;
+    /* border:2px solid blue; */
+    transition:.5s;
+    opacity:.7;
+  }
+  .play-button:hover{
+    cursor: pointer;
+    width:200px;
+    margin-left:85px;
+    margin-top:15px;
+    opacity:1;
+  }
+
+  .about-us-text {
+    /* border:2px solid red; */
+    position: absolute;
+    bottom:17vh;
+    right:7vw;
+    width:400px;
+  }
+  .about-us-text h1{
+    color:#fff;
+    text-align: left;
+    font-size:60px;
+  }
+  .about-us-text h2{
+    color:#fff;
+    text-align: left;
+    font-size:35px;
+    margin-bottom:15px;
+    font-weight:200;
+  }

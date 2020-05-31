@@ -57,6 +57,8 @@ export class HomeShowcase extends Component {
           unfixPage = () => {
             (document.getElementById("landing-page-container")).style.position= 'relative';
             (document.getElementById("landing-page-container")).style.top= '300px';
+
+            this.props.didPassShowcase()
           }
 
           fixPage = () => {

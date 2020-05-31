@@ -1,8 +1,36 @@
 .home-page-component{
     width:100%;
-    height:2000px;
+    height:4000px;
 }
 
 .homepage-header {
     opacity: 0;
+}
+
+    #about-section-container{
+        width:800px;
+        height:300px;
+        margin:0 auto;
+        padding-top:100px;
+        opacity:0;
+        transition:2s;
+    }
+
+    #about-section-container h2 {
+        color:#999;
+        font-size:28px;
+        text-align: center;
+        font-weight: 100;
+        line-height: 1.4em;
+    }
+
+    #about-section-container h2 span{
+        font-weight: 400;
+        color:#ccc;
+    }
+
+.youtube-container {
+    width:100%;
+    height:100vh;
+    border: 1ps solid blue;
 }

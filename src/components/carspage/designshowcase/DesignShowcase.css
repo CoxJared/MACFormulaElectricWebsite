@@ -9,7 +9,7 @@
 }
 
 #design-moving-container{
-  width:400%;
+  width:700%;
   position: absolute;
   left:0;
   /* border:1px solid green; */
@@ -152,9 +152,8 @@
 
 .design-selector {
   position: absolute;
-  width:620px;
+  width:720px;
   height:50px;
-
   bottom:20px;
   right:calc(50vw - 300px);
   /* background-color:red; */
@@ -171,6 +170,7 @@
   .design-selection-container:hover{
     cursor: pointer;
   }
+
 
     .design-selection-name{
       color:#000;
@@ -194,5 +194,9 @@
     }
     .design-selection-container:hover .design-selection-bar {
       background-color:#fff;
-      height:3px;
+      height:2px;
+    }
+    .selected-bar{
+      background-color:#fff;
+      height:2px;
     }
