@@ -1,9 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router,  Route } from 'react-router-dom';
 import HomePage from './components/homepage/HomePage';
 import CarsPage from './components/carspage/CarsPage';
+import TeamPage from './components/teampage/TeamPage';
+import SponsorsPage from './components/sponsorspage/SponsorsPage';
+import ContactPage from './components/contactpage/ContactPage';
 
 
 function App() {
@@ -16,6 +18,12 @@ function App() {
                 component={HomePage} />
             <Route exact path="/cars"
               component={CarsPage} />
+              <Route exact path="/team"
+              component={TeamPage} />
+            <Route exact path="/sponsors"
+              component={SponsorsPage} />
+              <Route exact path="/contact"
+              component={ContactPage} />
         </div>
     </Router>
   );

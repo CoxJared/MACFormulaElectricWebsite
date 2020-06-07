@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import  './HomePage.css';
 import HomeShowcase from '../homeshowcase/HomeShowcase';
 import Header from '../header/Header';
-
-import noseShot from './../../img/competition/nose-shot.jpeg';
 import PhotoSlide from '../photoslide/PhotoSlide';
-import PhotoShowcase from './aboutusvideo/AboutUsVideo';
+import ShowcaseLink from '../showcaselink/ShowcaseLink';
+
+import noseShot from './../../img/competition/nose-shot.jpeg'
+import amkBackground from './../../img/parts/amk-close.png';
+import playButton from './../../img/playButton.svg'
+import hyrbidTilt from './../../img/competition/hybrid-tilt-test.jpg'
+import sidePodshot from './../../img/parts/hybrid-side-pod.png';
+import GearBoxExplosion from './gearboxexplosion/GearBoxExplosion';
 
 
 export class HomePage extends Component {
@@ -17,6 +22,9 @@ export class HomePage extends Component {
             header:<div/>,
             pastedShowcase: false
         }
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 
     DidEnter =  () => {
@@ -54,7 +62,7 @@ export class HomePage extends Component {
                     DidEnter = {this.DidEnter}
                     didPassShowcase = {this.didPassShowcase}/>
                     <div id="about-section-container">
-                        <h2 classname="about-section-text">
+                        <h2 className="about-section-text">
                         <span>MAC Formula Electric</span> is a student run team working to design and build a fully electric, formula style racecar
                         </h2>
                     </div>
@@ -62,15 +70,22 @@ export class HomePage extends Component {
                     <PhotoSlide 
                     img={noseShot}
                     title="Formula SAE Electric"
+                    name="opening"
                     text="Formula SAE and Formula Student challenge students to build a single seat, open wheeled racecar to compete against other schools at annual international competitions. There are many areas of evaluation in these competitions including engineering design, business and cost as well as numerous dynamic events."/>
-
-                    {/* <div className="youtube-container">
-                     
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M89uLc4ShOY?modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                    </div> */}
-                    <PhotoShowcase/>
-                    
+                    <ShowcaseLink 
+                        backgroundImage = {amkBackground}
+                        type = 'Video'
+                        title = 'About Us'
+                        linkContainer =           
+                            {<a href="https://www.youtube.com/watch?v=M89uLc4ShOY&t=1s" target="_blank">
+                                <img className="play-button" src={playButton}/>
+                            </a>}
+                    />
+                    <PhotoSlide 
+                    img={hyrbidTilt}
+                    name="hybridtilt"
+                    title="Competition"
+                    text="Formula SAE and Formula Student challenge students to build a single seat, open wheeled racecar to compete against other schools at annual international competitions. There are many areas of evaluation in these competitions including engineering design, business and cost as well as numerous dynamic events."/>
                 </div>
             )
         

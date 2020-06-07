@@ -2,13 +2,14 @@
   width:1400px;
   height:100vh;
   margin:0 auto;
+  padding:40px 0;
   /* border:2px solid blue; */
   position:relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  opacity:0;
+  opacity:1;
   transition: .5s ease-in-out;
 }
 
@@ -29,7 +30,8 @@
     position: relative;
     width: 600px;
     height:500px;
-    top:100px;
+    /* top:100px; */
+    top:0;
     transition: .6s;
     /* border: 1px solid blue; */
   }
@@ -58,9 +60,9 @@
     margin-left:100px;
     /* border:1px solid red; */
     overflow: hidden;
+    /* align-content: center; */
   }
 
     .photoslide-image{
-      height:100%;
-
+      width:100%;
     }

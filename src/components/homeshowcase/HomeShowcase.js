@@ -31,7 +31,7 @@ export class HomeShowcase extends Component {
             
             //image fade in
             (document.getElementById("landing-image-container")).style.opacity="1";
-                }, 1000)
+                }, 500)
           }
         
           moveArrow() { 
@@ -69,7 +69,7 @@ export class HomeShowcase extends Component {
           checkScrolling = () => {
             //if scroll down
             window.onscroll = () => {
-
+              try{ //User can switch pages and this still attempts to find the IDs
                 //updateShowcase
                 if(window.pageYOffset > 90){
                   this.updateShowcase()
@@ -87,7 +87,8 @@ export class HomeShowcase extends Component {
                 else{
                   this.fixPage()
                 }
-              }
+              }catch {}
+            } 
           }
         
           render() {
@@ -100,15 +101,15 @@ export class HomeShowcase extends Component {
               <div className="landing-ether">
               <div id="landing-page-container">
                 <div id="landing-image-container">
-                  <img id="landing-image" src={lightImage}/>
-                  <img id="landing-image-dark" src={darkImage}/>
+                  <img id="landing-image" src={lightImage} alt=""/>
+                  <img id="landing-image-dark" src={darkImage} alt=""/>
                 </div>
                 <div id="landing-title-container">
                   <h1 className="landing-title">MAC Formula Electric</h1>
                   <h2 id="landing-subtitle">Inspiring a Culture of Innovation</h2>
                 </div>
                 <div className="enter-arrow-container" onClick={this.moveLanding}>
-                  <img id="enter-arrow" src={arrow}></img>
+                  <img id="enter-arrow" src={arrow} alt=""></img>
                 </div>
               </div>
               </div>

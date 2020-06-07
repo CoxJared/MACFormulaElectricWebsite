@@ -1,0 +1,35 @@
+.team-showcase-container{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+
+.team-showcase-image{
+  width:110%;
+  height:100%;
+  object-fit: cover;
+  opacity: .6;
+}
+
+.team-showcase-text-container{
+  position: relative;
+  width:800px;
+  margin:0 auto;
+  top:-55vh;
+  /* border:1px solid red; */
+}
+
+.team-showcase-text{
+  color:#fff;
+  font-size:80px;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.team-showcase-blurb{
+  color:#ddd;
+  font-size:27px;
+  line-height: 1.4em;
+  font-weight: 100;
+  text-align: center;
+}

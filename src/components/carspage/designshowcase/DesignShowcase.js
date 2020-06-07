@@ -76,7 +76,7 @@ export class DesignShowcase extends Component {
     if(position > 0){
       this.setState({slidePosition: position - 1})
       document.getElementById("design-moving-container").style.left= -(position -1) * window.innerWidth + "px";
-      if(position - 1 == 0){
+      if(position - 1 === 0){
         this.setState({current:'General'})
       } else {
         let currentTitle = this.state.info[position-2].title
@@ -86,9 +86,7 @@ export class DesignShowcase extends Component {
   }
 
   updateOnClick(name) {
-    console.log('hi')
     try{
-      console.log(name)
     let index = slides[name]
     console.log(index)
     this.setState({slidePosition: index})
@@ -129,8 +127,8 @@ export class DesignShowcase extends Component {
               <p className="design-text-para">MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.</p>
             </div>
             <div className="design-image-container">
-              <img className="design-image-cartoon" src={generalCartoon}></img>
-              <img id="design-image" src={generalRender}></img>
+              <img className="design-image-cartoon" src={generalCartoon} alt=""></img>
+              <img id="design-image" src={generalRender} alt=""></img>
             </div>
           </div>
 
@@ -142,7 +140,7 @@ export class DesignShowcase extends Component {
             <p className="design-text-para">{slide.text}</p>
           </div>
           <div className="design-image-container">
-            <img className="design-image" src={slide.image}/>
+            <img className="design-image" src={slide.image} alt=""/>
           </div>
         </div>
         ))}
@@ -158,20 +156,20 @@ export class DesignShowcase extends Component {
             <div className={`design-selection-bar ${this.state.current === 'General'?'selected-bar' :''}`}></div>
           </div>
           {this.state.info.map(position => (
-          <div className={'design-selection-container ${this.pageIsSelected("about", this.props.page)}'} onClick={this.updateOnClick.bind(this,position.title)}>
-          <h1 className="design-selection-name">
-            {position.title}
-          </h1>
-          <div className={`design-selection-bar ${position.title === this.state.current?'selected-bar' :''}`}></div>
-        </div>
+            <div className={'design-selection-container'} onClick={this.updateOnClick.bind(this,position.title)}>
+              <h1 className="design-selection-name">
+                {position.title}
+              </h1>
+              <div className={`design-selection-bar ${position.title === this.state.current?'selected-bar' :''}`}></div>
+            </div>
           ))}
         </div>
 
         <div className="left-buttom" onClick={this.moveLeft.bind(this)}>
-          <img className="left-arrow" src={arrow}></img>
+          <img className="left-arrow" src={arrow} alt=""></img>
         </div>
         <div className="right-buttom" onClick={this.moveRight.bind(this)}>
-          <img className="right-arrow" src={arrow}></img>
+          <img className="right-arrow" src={arrow} alt=""></img>
         </div>
       </div>
     )

@@ -58,7 +58,7 @@
   }
 
     .car-description-title{
-      color:#eee;
+      color:#fff;
       font-size:60px;
       padding-bottom:20px;
     }
@@ -78,13 +78,13 @@
     height:500px;
     right:-40px;
     top:200px;
-    color:#ddd;
+    color:#fff;
     /* border:2px solid blue; */
   }
 
     .car-name-header{
     margin: 30px 0 0 0 ;
-    color:#999;
+    color:#bbb;
     font-weight: 100;
     font-size:25px;
     padding-left:2px;
@@ -93,6 +93,7 @@
     .specs-heading{
       font-size: 50px;
       margin:10px 0 60px 0;
+      color:#ddd;
     }
 
     #spec {
@@ -112,6 +113,7 @@
         width:300px;
         font-size: 20px;
         font-weight:300;
+        color:#eee;
       }
 
       .spec-value{

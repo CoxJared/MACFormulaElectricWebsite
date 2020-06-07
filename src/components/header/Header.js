@@ -84,17 +84,21 @@ class Header extends Component{
                     </div></div>
                     <ul className="nav-bar">               
                         <li className={`nav-bar-item ${this.pageIsSelected("about", this.props.page)}`}>
-                             <Link to="/cars">Cars</Link>
+                             <Link to="/cars">Design</Link>
+                             <div className="white-hover-bar"></div>
                         </li> 
                         <li className={`nav-bar-item ${this.pageIsSelected("recruitment", this.props.page)}`}>
-                            <Link to="/recruitment">Team</Link>
+                            <Link to="/team">Team</Link>
+                            <div className="white-hover-bar"></div>
                         </li>   
                         <li className={`nav-bar-item ${this.pageIsSelected("sponsors", this.props.page)}`}>
                             <Link to="/sponsors">Sponsors</Link>
+                            <div className="white-hover-bar"></div>
                         </li> 
 
                         <li className={`nav-bar-item ${this.pageIsSelected("contact", this.props.page)}`}>
                             <Link to="/contact">Contact</Link>
+                            <div className="white-hover-bar"></div>
                         </li>
                     </ul>
                 </div>

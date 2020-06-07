@@ -1,0 +1,10 @@
+.team-photo-container{
+  width:100%;
+  height:auto;
+  position: relative;
+}
+
+.team-photo {
+  position: relative;
+  width:100%;
+}

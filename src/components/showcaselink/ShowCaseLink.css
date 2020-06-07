@@ -1,0 +1,47 @@
+#showcase-link-container{
+  width:100%;
+  position: relative;
+  overflow: hidden;
+  height:auto;
+  transition:4s;
+  justify-content: center;
+}
+
+  #showcase-link-photo{
+width: 110%;
+left:0;
+position:absolute;
+bottom:0;
+opacity: .6;
+transition:15s;
+  }
+  .showcase-link-linked-container{
+    width:400px;
+    height:400px;
+    position: relative;
+    margin-top:40vh;
+    margin-left:calc(50vw - 200px);
+    /* border:2px solid blue; */
+    align-items: center;
+  }
+
+
+  .showcase-link-text {
+    /* border:2px solid red; */
+    position: absolute;
+    bottom:17vh;
+    right:7vw;
+    width:400px;
+  }
+  .showcase-link-text h1{
+    color:#fff;
+    text-align: left;
+    font-size:60px;
+  }
+  .showcase-link-text h2{
+    color:#fff;
+    text-align: left;
+    font-size:35px;
+    margin-bottom:15px;
+    font-weight:200;
+  }
