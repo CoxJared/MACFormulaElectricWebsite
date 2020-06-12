@@ -1,0 +1,13 @@
+.competition-showcase-container{
+  width:100%;
+  border:1px solid red;
+  height:700px;
+}
+
+#competition-image {
+  
+  position: relative;
+  width:110%;
+  object-fit: fill;
+  left:-10%;
+}

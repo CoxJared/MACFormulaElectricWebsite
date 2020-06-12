@@ -31,7 +31,7 @@ componentDidMount() {
             bounding.bottom - halfHeight <= (window.innerHeight || document.documentElement.clientHeight) ) {  
   
               //Show Elements
-              document.getElementById("photoslide-container").style.opacity=(100);
+              document.getElementById("photoslide-container").style.opacity=(1);
               document.getElementById("description-container").style.top=(0);
           }
         }catch(err){

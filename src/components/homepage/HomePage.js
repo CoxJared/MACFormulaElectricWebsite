@@ -4,13 +4,17 @@ import HomeShowcase from '../homeshowcase/HomeShowcase';
 import Header from '../header/Header';
 import PhotoSlide from '../photoslide/PhotoSlide';
 import ShowcaseLink from '../showcaselink/ShowcaseLink';
+import PhotoSlide2 from '../photoslide2/PhotoSlide2';
+
 
 import noseShot from './../../img/competition/nose-shot.jpeg'
 import amkBackground from './../../img/parts/amk-close.png';
 import playButton from './../../img/playButton.svg'
 import hyrbidTilt from './../../img/competition/hybrid-tilt-test.jpg'
+import teamPhoto from './../../img/hatch/team-photo.png';
 import sidePodshot from './../../img/parts/hybrid-side-pod.png';
 import GearBoxExplosion from './gearboxexplosion/GearBoxExplosion';
+import CompetitionShowcase from '../competitionshowcase/CompetitionShowcase';
 
 
 export class HomePage extends Component {
@@ -81,11 +85,12 @@ export class HomePage extends Component {
                                 <img className="play-button" src={playButton}/>
                             </a>}
                     />
-                    <PhotoSlide 
-                    img={hyrbidTilt}
-                    name="hybridtilt"
-                    title="Competition"
-                    text="Formula SAE and Formula Student challenge students to build a single seat, open wheeled racecar to compete against other schools at annual international competitions. There are many areas of evaluation in these competitions including engineering design, business and cost as well as numerous dynamic events."/>
+                    <PhotoSlide2
+                    img={teamPhoto}
+                    name="team"
+                    title="Our Team"
+                    text="Every year, the team starts out by creating new goals. From there, a plan of action is formed, deadlines are established, and tasks are distributed between team members. Although Formula SAE is an engineering competition, the team requires more than just engineering students. As a result, a conscious effort is made to appeal to students with a variety of backgrounds, interests, and areas of study."/>
+                    <CompetitionShowcase />
                 </div>
             )
         

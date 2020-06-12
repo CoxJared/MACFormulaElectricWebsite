@@ -71,7 +71,7 @@ export class MainShowcase extends Component {
             <div id="image-full"></div>
           </div>
           <div id="text-container">
-            <h1 className="car-description-title">MAC EV1</h1>
+            <h1 className="car-description-title">ZAPDOS</h1>
             <h1 className="car-description">The design focus of the car was built around the team strengths, which includes knowledge of analysis and manufacturing techniques for composites and experience with custom pcb design. The central team focus has always been to create our inaugural car at all costs in order to lay down a foundation to build off, and allow our team to have resilience towards any future challenges it may face</h1>
           </div>
           <div id="main-specs">
