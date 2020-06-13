@@ -7,7 +7,7 @@ export class TeamShowcase extends Component {
   checkScrolling = () => {
     //if scroll down
     window.onscroll = () => {
-        document.getElementById("team-showcase-image").style.top= window.pageYOffset + "px";
+        document.getElementById("team-showcase-image").style.top= window.pageYOffset/3 + "px";
     }
   }
 

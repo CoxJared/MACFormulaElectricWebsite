@@ -20,7 +20,7 @@ export class CompetitionShowcase extends Component {
 
             //Show Elements
             document.getElementById("competition-showcase-container").style.opacity=(1);
-            document.getElementById("competition-text-container").style.top="200px";
+            document.getElementById("competition-text-container").style.top="150px";
             document.getElementById("competition-image").style.left="-50px";
         }
       }catch(err){
@@ -32,8 +32,14 @@ export class CompetitionShowcase extends Component {
         <img id = "competition-image" src={hybridTilt}></img>
         <div className="gradient-container"/>
         <div id="competition-text-container">
-          <h1 className="competition-title">Competition</h1>
-          <h1 className="competition-text">Teams compete in a number of different events; from design, cost and dynamic events such as autocross and endurance.</h1>
+          <h1 className="competition-title">Support</h1>
+          <h1 className="competition-text">Since <span>MAC Formula Electric</span> is a non-profit student team, we require support from some very generous companies and institutions to achieve our goals and compete.</h1>
+          <div className="sponsorship-button">
+            <h1 className="sponsorship-button-text">
+              Sponsorships
+            </h1>
+            <div className="sponsorship-button-white"></div>
+          </div>
         </div>
         
       </div>

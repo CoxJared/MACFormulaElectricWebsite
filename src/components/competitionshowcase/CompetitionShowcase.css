@@ -17,7 +17,7 @@
 }
 #competition-text-container {
   position: absolute;
-  top:320px;
+  top:350px;
   transition:1.4s ease-in-out;
 /* border:1px solid green; */
 margin-left:calc(50vw - 720px);
@@ -29,11 +29,14 @@ margin-left:calc(50vw - 720px);
 }
 .competition-text{
   color:#fff;
-  margin-top:10px;
-  line-height: 1.4em;
+  margin-top:40px;
+  line-height: 1.6em;
   width:570px;
-  font-size:28px;
+  font-size:23px;
   font-weight: 100;
+}
+.competition-text span{
+  font-weight:700;
 }
 
 .gradient-container{
@@ -44,4 +47,44 @@ margin-left:calc(50vw - 720px);
   top:0;
   background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
   /* border:1px solid red; */
+}
+
+.sponsorship-button{
+  border: 1px solid #fff;
+  width:300px;
+  height:90px;
+  margin-top:70px;
+
+  position: relative;
+}
+.sponsorship-button:hover {
+  cursor: pointer;
+}
+
+.sponsorship-button-text{
+position: relative;
+  color:#fff;
+  text-align: center;
+  padding-top:20px;
+  font-weight: 100;
+  transition: .5s ease-in-out;
+}
+
+.sponsorship-button:hover .sponsorship-button-text{
+  color:#000;
+  z-index: 2;
+}
+
+.sponsorship-button-white{
+  position: absolute;
+  height:100%;
+  width:0;
+  top:0;
+  left:0;
+  background:#fff;
+  z-index: 1;
+  transition:.3s ease-in-out;
+}
+.sponsorship-button:hover .sponsorship-button-white{
+  width: 100%;
 }

@@ -16,7 +16,7 @@ export class Footer extends Component {
             <h1 className="social-media-name">formula@mcmaster.ca</h1>
           </div>
           <div className="social-media-item">
-          <a className="social-media-name" href="https://twitter.com/macformula" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a className="social-media-name" href="https://www.instagram.com/macformulaelectric" target="_blank" rel="noopener noreferrer">Instagram</a>
           <div className="social-media-underline"/>
           </div>
           <div className="social-media-item">
