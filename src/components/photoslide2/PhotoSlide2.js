@@ -22,7 +22,7 @@ export class PhotoSlide2 extends Component {
   
               //Show Elements
               document.getElementById("photoslide-container-2").style.opacity=(1);
-              document.getElementById("description-container-2").style.top=(0);
+              document.getElementById("description-container-2").style.top="30px";
           }
         }catch(err){
           console.log(err)}
