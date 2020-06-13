@@ -1,21 +1,25 @@
-.team-showcase-container{
+#team-showcase-container{
   width:100%;
   height:auto;
   overflow: hidden;
+  opacity: 0;
+  transition:1s;
 }
 
-.team-showcase-image{
+#team-showcase-image{
   width:110%;
   height:100%;
   object-fit: cover;
   opacity: .6;
+  position: relative;
 }
 
-.team-showcase-text-container{
+#team-showcase-text-container{
   position: relative;
   width:800px;
   margin:0 auto;
-  top:-55vh;
+  top:-45vh;
+  transition:1s;
   /* border:1px solid red; */
 }
 

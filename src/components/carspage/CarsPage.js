@@ -7,6 +7,7 @@ import PhotoSlide from '../photoslide/PhotoSlide';
 import DesignShowcase from './designshowcase/DesignShowcase';
 
 import rileyInCar from './../../img/hatch/riley-in-car.jpeg';
+import Footer from '../footer/Footer';
 
 export class CarsPage extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ export class CarsPage extends Component {
           text='MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.'
         />
         <DesignShowcase testfunction={this.test}/>
+        <Footer />
       </div>
     )
   }

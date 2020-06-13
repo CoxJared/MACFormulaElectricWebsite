@@ -15,7 +15,7 @@ export class PhotoSlide2 extends Component {
           console.log(className)
           var bounding = document.querySelector(className).getBoundingClientRect();
 
-          let halfHeight = 500
+          let halfHeight = 600
           if (
             bounding.top >= 0 &&
             bounding.bottom - halfHeight <= (window.innerHeight || document.documentElement.clientHeight) ) {  

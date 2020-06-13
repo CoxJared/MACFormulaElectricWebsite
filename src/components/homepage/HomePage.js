@@ -11,10 +11,11 @@ import noseShot from './../../img/competition/nose-shot.jpeg'
 import amkBackground from './../../img/parts/amk-close.png';
 import playButton from './../../img/playButton.svg'
 import hyrbidTilt from './../../img/competition/hybrid-tilt-test.jpg'
-import teamPhoto from './../../img/hatch/team-photo.png';
+import teamPhoto from './../../img/hatch/team-photo.png'
 import sidePodshot from './../../img/parts/hybrid-side-pod.png';
 import GearBoxExplosion from './gearboxexplosion/GearBoxExplosion';
 import CompetitionShowcase from '../competitionshowcase/CompetitionShowcase';
+import Footer from '../footer/Footer';
 
 
 export class HomePage extends Component {
@@ -91,6 +92,7 @@ export class HomePage extends Component {
                     title="Our Team"
                     text="Every year, the team starts out by creating new goals. From there, a plan of action is formed, deadlines are established, and tasks are distributed between team members. Although Formula SAE is an engineering competition, the team requires more than just engineering students. As a result, a conscious effort is made to appeal to students with a variety of backgrounds, interests, and areas of study."/>
                     <CompetitionShowcase />
+                    <Footer />
                 </div>
             )
         

@@ -11,7 +11,7 @@ import teamPhoto from './../../img/hatch/team-photo.png';
 export class TeamPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
-}
+  }
 
   render() {
     return (
