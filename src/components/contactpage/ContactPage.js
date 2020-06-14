@@ -4,9 +4,12 @@ import './ContactPage.css'
 import Header from '../header/Header';
 
 import hatchGarage from './../../img/hatch/garage.jpeg'
+import Email from './email/Email';
+import Footer from '../footer/Footer';
 
 export class ContactPage extends Component {
   componentDidMount() {
+    window.scrollTo(0, 0)
     setTimeout(function() {
       document.getElementById('contact-showcase').style.opacity = 1
     },100)
@@ -52,6 +55,8 @@ export class ContactPage extends Component {
           </div>
 
         </div>
+        <Email />
+        <Footer/>
       </div>
     )
   }

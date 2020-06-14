@@ -6,6 +6,7 @@ import PhotoSlide from '../photoslide/PhotoSlide';
 import './TeamPage.css'
 
 import openHousePhoto from './../../img/hatch/open-house.jpeg';
+import Footer from '../footer/Footer';
 
 export class TeamPage extends Component {
   componentDidMount() {
@@ -23,7 +24,8 @@ export class TeamPage extends Component {
         <PhotoSlide 
                     img={openHousePhoto}
                     title="Recruitment Events"
-                    text="Although Formula SAE is an engineering competition, the team requires more than just engineering students. As a result, a conscious effort is made to appeal to students with a variety of backgrounds, interests, and areas of study. This ensures that we have the best people in the right roles."/>
+                    text="Open houses and Info sessions are held at the beginning of the school year for anyone interested to come and learn about the team.  These events are a great way to come out and see if this is a team you may be interested in joining!"/>
+        <Footer />
       </div>
     )
   }

@@ -26,6 +26,7 @@ componentDidMount() {
         <Header />
         <div id="sponsorship-top-showcase">
           <img id="sponsorship-top-showcase-image" src={hybridInHatch} alt=""></img>
+          {/* <div className="sponsorship-showcase-gradient"/> */}
           <div id="sponsorship-top-showcase-text">
             <h1>Sponsorship Opportunities</h1>
             <h2>MAC Formula Electric looks forward to the possibilty of a partnership with companies looking to contribute to student engineering competitions. We feel that the experience which our team members gain from the team make them very well rounded employees for future careers.</h2>
