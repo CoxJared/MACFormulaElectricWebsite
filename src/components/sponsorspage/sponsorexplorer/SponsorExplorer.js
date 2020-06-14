@@ -44,77 +44,114 @@ export class SponsorExplorer extends Component {
           {id: 0,
               name: 'Altium',
               websiteLink: 'https://www.altium.com/',
-              img: AltiumLogo},
+              img: AltiumLogo,
+            description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+        color:"rgb(166,151,106)"},
           {id: 1,
               name: 'AMK',
               websiteLink: 'https://amk-group.com/en/content/formula_student_electric',
-              img: AmkLogo},
+              img: AmkLogo,
+              description:"AMK has developed the motor and inverter kit that we are using",
+              color:"rgb(64,151,199)"},
           {id: 2,
               name: 'Dspace',
               websiteLink: 'https://www.dspace.com/en/inc/home.cfm',
-              img: DspaceLogo},
+              img: DspaceLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(22,70,145)"},
           {id: 0,
               name: 'General Motors',
               websiteLink: 'https://www.gm.ca/en/home.html',
-              img: GmLogo},
+              img: GmLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(46,86,153)"},
           {id: 5,
               name: 'Linamar',
               websiteLink: 'https://www.linamar.com/',
-              img: LinimarLogo},
+              img: LinimarLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(196,94,37)"},
           {id: 1,
               name: 'McMaster Engineering',
               websiteLink: 'https://www.eng.mcmaster.ca/',
-              img: McmasterengineeringLogo},
+              img: McmasterengineeringLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(94,22,51)"},
           {id: 0,
               name: 'Solidworks',
               websiteLink: 'https://www.solidworks.com/',
-              img: SolidworksLogo},
+              img: SolidworksLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(209,73,67)"},
       ],
       gold: [
           {id: 0,
               name: 'Bender',
               websiteLink: 'https://www.bender-ca.com/',
-              img: BenderLogo},
+              img: BenderLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(54,122,60)"},
           {id: 2,
               name: 'CpaOntario',
               websiteLink: 'https://www.cpaontario.ca/',
-              img: CpaontarioLogo},
+              img: CpaontarioLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(16,63,160)"},
           {id: 11,
               name: 'Faro',
               websiteLink: 'https://www.faro.com/',
-              img: FaroLogo},
+              img: FaroLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(31,82,133)"},
           {id: 4,
               name: 'General Sealants',
               websiteLink: 'http://www.generalsealants.com/',
-              img: GeneralsealantsLogo},
+              img: GeneralsealantsLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(188,53,50)"},
           {id: 6,
               name: 'Mathworks',
               websiteLink: 'https://www.mathworks.com/',
-              img: MathworksLogo},
+              img: MathworksLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(36,91,142)"},
           {id: 7,
               name: 'Mclaren Engineering',
               websiteLink: 'https://www.mgmclaren.com/',
-              img: MclarenengineeringLogo},
+              img: MclarenengineeringLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(178,87,52)"},
+              ,
           {id: 8,
               name: 'MES',
               websiteLink: 'http://www.macengsociety.ca/',
-              img: MesLogo},
+              img: MesLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(219,56,50)"},
           {id: 9,
               name: 'MSC Software',
               websiteLink: 'https://www.mscsoftware.com/',
-              img: MscSoftwareLogo},
+              img: MscSoftwareLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(235,73,60)"},
           {id: 10,
               name: 'TE Connectivty',
               websiteLink: 'https://www.te.com/usa-en/home.html',
-              img: TeLogo},
+              img: TeLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(229,146,52)"},
           {id: 1,
               name: 'ViGrade',
               websiteLink: 'https://www.vi-grade.com/',
-              img: ViGradeLogo},
+              img: ViGradeLogo,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(217,67,51)"},
           {id: 1,
               name: 'Electro Meters',
               websiteLink: 'http://www.electro-meters.com/',
-              img: electrometers}
+              img: electrometers,
+              description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+              color:"rgb(33,81,161)"}
       ],
       silver: [
           {id: 1,
@@ -186,17 +223,49 @@ export class SponsorExplorer extends Component {
     return (
       <div className="sponsor-explorer-container">
         <h1 className="sponsor-type-heading"><span>Platinum Sponsors</span></h1>
+
+
           <div className="sponsor-container platinum">
               {this.state.platinum.map(sponsor => (
                   <>
                   <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
                   <img className="sponsors-logo" src={sponsor.img} alt="platinum-sponsor"/>
-                  <h1>{sponsor.name}</h1>    
+                  <div className="sponsors-text-container">
+                    <h1>{sponsor.name}</h1>
+                    <h2 className="sponsor-text-description">
+                        {sponsor.description}
+                    </h2>
+                  </div>   
+                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  <div className="sponsor-flag" style={{background:sponsor.color}}>
+                      <h1 className="sponsor-flag-text">Visit
+                          </h1></div> 
                   </a>  
                   </> 
               ))}
             </div>
 
+            <h1 className="sponsor-type-heading"><span>Gold Sponsors</span></h1>
+            <div className="sponsor-container gold">
+              {this.state.gold.map(sponsor => (
+                  <>
+                  <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
+                  <img className="sponsors-logo" src={sponsor.img} alt="platinum-sponsor"/>
+                  <div className="sponsors-text-container">
+                    <h1>{sponsor.name}</h1>
+                    <h2 className="sponsor-text-description">
+                        {sponsor.description}
+                    </h2>
+                  </div>   
+                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  <div className="sponsor-flag" style={{background:sponsor.color}}>
+                      <h1 className="sponsor-flag-text">Visit
+                          </h1></div> 
+                  </a>  
+                  </> 
+              ))}
+            </div>
+{/* 
             <h1 className="sponsor-type-heading"><span>Gold Sponsors</span></h1>
                 <div className="sponsor-container gold">
                     {this.state.gold.map(sponsor => (
@@ -231,7 +300,7 @@ export class SponsorExplorer extends Component {
                         </a>  
                         </> 
                     ))}
-                </div>
+                </div> */}
       </div>
     )
   }

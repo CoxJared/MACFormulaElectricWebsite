@@ -7,6 +7,7 @@ import './TeamPage.css'
 
 import openHousePhoto from './../../img/hatch/open-house.jpeg';
 import Footer from '../footer/Footer';
+import TeamMembers from './teammembers/TeamMembers';
 
 export class TeamPage extends Component {
   componentDidMount() {
@@ -25,6 +26,7 @@ export class TeamPage extends Component {
                     img={openHousePhoto}
                     title="Recruitment Events"
                     text="Open houses and Info sessions are held at the beginning of the school year for anyone interested to come and learn about the team.  These events are a great way to come out and see if this is a team you may be interested in joining!"/>
+        <TeamMembers/>
         <Footer />
       </div>
     )

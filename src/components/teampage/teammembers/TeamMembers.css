@@ -1,0 +1,91 @@
+.team-members-section-name{
+  color:#fff;
+  font-weight:100;
+  font-size:40px;
+  width:1400px;
+  position: relative;
+  margin:0 auto;
+  /* padding-bottom: 20px; */
+  margin-bottom:30px;
+  /* border-bottom:1px solid #333; */
+}
+
+.team-members-container{
+  width:1500px;
+  /* border:1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin:0 auto;
+}
+
+.team-member-container{
+  position: relative;
+  width:400px;
+  height:170px;
+  /* border:1px solid #d42020; */
+  overflow: hidden;
+  margin:40px;
+  display: flex;
+}
+
+.team-member-image-container{
+  position: relative;
+  width:170px;
+  /* border:1px solid blue; */
+}
+.team-member-image{
+  position: relative;
+  width:100%;
+  /* width:200px; */
+  object-fit:contain;
+  opacity:.7;
+}
+
+.team-member-text-container{
+  position: relative;
+  width:200px;
+  /* border:1px solid blue; */
+  padding:5px 0 0 10px;
+}
+
+.team-member-name{
+color:#ddd;
+font-size: 25px;
+font-weight: 100;
+padding-bottom: 10px;
+border-bottom:1px solid rgb(80, 80, 80);
+}
+
+.team-member-position{
+  color:#fff;
+  font-weight: 100;
+  margin-top:10px;
+  font-size:20px;
+}
+
+.team-member-linkedin-button{
+  margin-top:15px;
+  border:2px solid rgb(98, 98, 98);
+  border-radius: 7px;
+  width:30px;
+  height:30px;
+  transition:.5s ease-in-out;
+}
+
+.team-memebr-linkedin-name{
+  color:rgb(114, 114, 114);
+  padding:1px 0 0 4px;
+  font-weight: 600;
+  font-size:21px;
+  transition:.5s ease-in-out;
+}
+
+.team-member-linkedin-button:hover{
+  cursor: pointer;
+  border:2px solid rgba(54, 175, 255, 0.692);
+}
+
+.team-member-linkedin-button:hover .team-memebr-linkedin-name{
+  color:rgb(54, 175, 255);
+}

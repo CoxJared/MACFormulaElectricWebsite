@@ -1,6 +1,6 @@
 .sponsor-explorer-container {
   width:100%;
-  height: 2500px;
+  height: auto;
   background: #fff;
   padding-top:100px;
   opacity:1;
@@ -20,82 +20,115 @@
 
 .sponsor-container {
   padding:50px 0;
-  width:1100px;
+  width:1500px;
   position: relative;
   margin:0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  /* border:1px solid #222; */
 }
 
-.sponsor-container .sponsor{
-  width:250px;
+.sponsor{
+  width:500px;
   height:250px;
-  padding:1px;
-  margin:10px;
+  position: relative;
+  /* border:1px solid #222; */
+  padding:0px 0 0 10px;
+  margin:20px 40px;
+  display: flex;
+  transition:1s ease-in-out;
 }
-.gold .sponsor {
-  width: 180px;
-  height: 180px;
-  padding:0vw;
-  margin:4px;
+.sponsor:hover{
+  /* border-left: 2px solid #222; */
 }
-.silver .sponsor {
-  width:150px;
-  height: 150px;
-  padding: 0vw;
-  margin:3px;
-}
-.software .sponsor  {
-  width:150px;
-  height: 150px;
-  padding: 0vw;
-  margin:3px;
-} 
-.sponsor h1 {
-  opacity: 1;
-  padding:auto;
-  text-align: center;
-} 
 
 .sponsors-logo {
   object-fit: contain;
-  width:80%;
-  height:70%;
+  width:40%;
+  height:100%;
   position: relative;
-  margin-left:10%;
-  background: #fff;
+  background: rgb(255, 255, 255);
+  /* border:1px solid #8a8a8a */
 }
+
+.sponsors-text-container{
+  width:50%;
+  /* height:auto; */
+  /* border:1px solid #b85f16; */
+  padding:0px 10px;
+  margin-left: 5px;
+  /* border-left: 1px solid #222; */
+}
+.sponsors-text-container h1{
+font-size: 27px;
+margin:10px 0;
+padding-bottom: 5px;
+font-weight: 300;
+border-bottom: 1px solid rgb(202, 202, 202);
+}
+.sponsors-text-container h2{
+  font-size: 15px;
+  text-align: justify;
+  color:#333;
+  line-height: 1.4em;
+  font-weight: 200;
+  }
 
 .sponsor {
   /* filter: grayscale(20%); */
   text-decoration: none;
 }
 
-.sponsor:hover {
-  transition: all .5s ease;
-  filter: grayscale(0%);
-  border-radius: 5px;
-
-  box-shadow: 5px 5px 5px 1px grey;
+.sponsor-flag-pole{
+  width:0;
+  height:3px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  background:rgb(51, 102, 170);
+  opacity:0;
+  transition:.5s ease-in-out;
 }
-.platinum .sponsor h1{
-  padding-top:20px;
+.sponsor:hover .sponsor-flag-pole{
+  width:100%;
+  opacity:1;
 }
-.sponsor:hover h1 {
+.sponsor-flag{
+  position: absolute;
+  bottom:0;
+  right:0;
+  height:40px;
+  width:0px;
+  background-color: rgb(51, 102, 170);
+  /* padding:5px; */
+  overflow: hidden;
+  opacity: 0;
+  transition:.5s ease-in-out;
+}
+.sponsor-flag-text{
+  color:rgb(74, 118, 175);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 5px;
+  transition: .7s ease-in-out;
+}
+.sponsor:hover .sponsor-flag{
+  width:100px;
   opacity: 1;
+}.sponsor:hover .sponsor-flag-text{
+   color:#fff;
 }
-.sponsor:hover .logo{
-}
+
+
 
 h1 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
-.platinum h1, .gold h1, .silver h1, .software h1{
-  font-size: 12px; 
-}
+
 
 
 .sponsor-type-heading{
@@ -104,36 +137,10 @@ h1 {
   font-size: 30px;
   /* border:1px solid red; */
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .sponsor-type-heading span {
   padding:7px;
   font-family: 'Rajdhani', sans-serif;
-}
-
-.platinum-heading span{
-  border-right: 4px #559696 solid;
-  border-left: 4px #559696 solid;
-  padding: 1px 10px;
-  border-radius: 10px;
-  
-}
-.gold-heading span{
-  border-right: 4px #dfce3d solid;
-  border-left: 4px #dfce3d solid;
-  padding: 1px 10px;
-  border-radius: 10px;
-}
-.silver-heading span{
-  border-right: 4px #8a8a8a solid;
-  border-left: 4px #8a8a8a solid;
-  padding: 1px 10px;
-  border-radius: 10px;
-}
-.software-heading span{
-  border-right: 4px #b85f16 solid;
-  border-left: 4px #b85f16 solid;
-  padding: 1px 10px;
-  border-radius: 10px;
 }

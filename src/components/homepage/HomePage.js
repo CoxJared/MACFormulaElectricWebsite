@@ -52,12 +52,14 @@ export class HomePage extends Component {
             if(this.state.pastedShowcase)
                 {  
                   //Show Elements
-                  try{
+                  
                     setTimeout(
                         function(){
+                            try{
                   document.getElementById("about-section-container").style.opacity=1;
-                        },800);
                 } catch{}
+                        },800);
+                
               }
 
             return (
