@@ -7,8 +7,10 @@
 }
 
 #team-showcase-image{
-  width:110%;
+  width:calc(100% + 30px);
+  left:30px;
   height:100%;
+  transition: 4s ease-out;
   object-fit: cover;
   opacity: .6;
   position: relative;

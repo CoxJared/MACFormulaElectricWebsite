@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 import './Footer.css'
 
@@ -6,10 +7,12 @@ export class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
-        <div className="contact-us-button">
-        <div className="contact-us-white-background"></div>
-          <h1 className="contact-us-title">Contact Us</h1>
-        </div>
+        <Link style={{textDecoration:'none'}}to="/contact">
+          <div className="contact-us-button">
+          <div className="contact-us-white-background"></div>
+            <h1 className="contact-us-title">Contact Us</h1>
+          </div>
+        </Link>
         <div className="footer-white-line"></div>
         <div className="footer-social-media-container">
           <div className="social-media-name-container">
@@ -24,7 +27,7 @@ export class Footer extends Component {
           <div className="social-media-underline"/>
           </div>
           <div className="social-media-item">
-          <a className="social-media-name" href="https://twitter.com/macformula" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a className="social-media-name" href="https://www.linkedin.com/company/27013195" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <div className="social-media-underline"/>
           </div>
           <div className="social-media-item">

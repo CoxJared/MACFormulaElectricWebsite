@@ -12,6 +12,7 @@ import Footer from '../footer/Footer';
 export class SponsorsPage extends Component {
 
 componentDidMount() {
+  window.scrollTo(0, 0)
   setTimeout(function() {
     document.getElementById("sponsorship-top-showcase").style.opacity = 1;
     document.getElementById("sponsorship-top-showcase-text").style.top = "-90vh";

@@ -6,7 +6,6 @@ import PhotoSlide from '../photoslide/PhotoSlide';
 import './TeamPage.css'
 
 import openHousePhoto from './../../img/hatch/open-house.jpeg';
-import teamPhoto from './../../img/hatch/team-photo.png';
 
 export class TeamPage extends Component {
   componentDidMount() {

@@ -17,7 +17,7 @@
 }
 #competition-text-container {
   position: absolute;
-  top:350px;
+  top:250px;
   transition:1.4s ease-in-out;
 /* border:1px solid green; */
 margin-left:calc(50vw - 720px);
