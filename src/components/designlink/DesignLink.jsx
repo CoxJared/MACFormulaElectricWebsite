@@ -18,7 +18,7 @@ export class DesignLink extends Component {
 
             //Show Elements
             document.getElementById("design-link-container").style.opacity=1;
-            document.getElementById("design-link-text-container").style.marginTop='100px';
+            document.getElementById("design-link-text-container").style.marginTop='200px';
             this.document.getElementById("design-link-image").style.left='0px';
             // document.getElementById("design-text-container").style.top=(0);
         }
@@ -30,7 +30,7 @@ export class DesignLink extends Component {
       <div id="design-link-container">
         <div id="design-link-text-container">
           <h1 className="design-link-title">Design</h1>
-          <h2 className="design-link-text">MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.  This includes features such as a carbon fibre monocoque, custom pcbs and torqu vectoring!</h2>
+          <h2 className="design-link-text">MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.  This includes features such as a carbon fibre monocoque, custom pcbs and torque vectoring!</h2>
           <Link to="/design" style={{textDecoration:'none'}}>
             <Button text="Explore"/>
           </Link>

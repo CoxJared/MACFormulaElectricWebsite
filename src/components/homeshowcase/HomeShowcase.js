@@ -54,7 +54,7 @@ export class HomeShowcase extends Component {
             (document.getElementById("landing-image-dark")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.top= '00px';
-            (document.getElementById("landing-image-container")).style.width= '1550px';
+            // (document.getElementById("landing-image-container")).style.width= '1550px';
 
             this.props.DidEnter()
           }
