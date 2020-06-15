@@ -40,7 +40,7 @@ componentDidMount() {
                         linkContainer =           
                             {<div className="sponsorship-package-container">
                                 <div className="sponsorship-package-background"/>
-                                <h1 className="sponsorship-package-title">open</h1>
+                                <h1 className="sponsorship-package-title">Open</h1>
                             </div>}
                     />
         <Footer />

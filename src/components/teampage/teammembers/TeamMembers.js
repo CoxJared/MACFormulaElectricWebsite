@@ -52,9 +52,11 @@ export class TeamMembers extends Component {
             <div className="team-member-text-container">
               <h1 className="team-member-name">{member.name}</h1>
               <h2 className="team-member-position">{member.position}</h2>
+              <a href="" style={{textDecoration:'none'}}>
               <div className="team-member-linkedin-button">
                 <h1 className="team-memebr-linkedin-name">in</h1>
               </div>
+              </a>
             </div>
           </div>
         ))}

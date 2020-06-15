@@ -47,7 +47,8 @@
 
     #photoslide-description-2{
       color:#eee;
-      font-size:22px;
+      font-size:18px;
+      font-weight: 100;
       line-height: 1.6em;
       padding:20px 0px;
       text-align:justify;
@@ -68,3 +69,37 @@
       width:100%;
       opacity:.8;
     }
+
+.team-link-button{
+  position: relative;
+  width:200px;
+  height:70px;
+  border:1px solid #aaa;
+  margin-top:30px;
+}
+.team-link-button:hover{
+  cursor: pointer;
+}
+.team-link-title{
+  font-size: 27px;
+  color:#fff;
+  text-align:center;
+  font-weight: 200;
+  padding-top:16px;
+  transition: .4s ease-in-out;
+}
+.team-link-button:hover .team-link-title{
+  color:#222;
+}
+.team-link-white{
+  position: absolute;
+  width:0;
+  height:100%;
+  top:0;
+  background-color: #fff;
+  transition: .4s ease-in-out;
+  z-index: -1;
+}
+.team-link-button:hover .team-link-white{
+  width:100%;
+}

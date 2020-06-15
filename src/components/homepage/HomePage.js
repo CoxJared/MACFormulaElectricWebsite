@@ -4,7 +4,7 @@ import HomeShowcase from '../homeshowcase/HomeShowcase';
 import Header from '../header/Header';
 import PhotoSlide from '../photoslide/PhotoSlide';
 import ShowcaseLink from '../showcaselink/ShowcaseLink';
-import PhotoSlide2 from '../photoslide2/PhotoSlide2';
+import TeamLink from '../teamLink/TeamLink';
 
 
 import noseShot from './../../img/competition/nose-shot.jpeg'
@@ -88,7 +88,7 @@ export class HomePage extends Component {
                                 <img className="play-button" src={playButton}/>
                             </a>}
                     />
-                    <PhotoSlide2
+                    <TeamLink
                     img={teamPhoto}
                     name="team"
                     title="Our Team"

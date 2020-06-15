@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import './PhotoSlide2.css';
+import './TeamLink.css';
 
-export class PhotoSlide2 extends Component {
+export class TeamLink extends Component {
   render() {
 
       //checking if the design container is inside viewport, whenever scroll happens
@@ -39,7 +40,14 @@ export class PhotoSlide2 extends Component {
           <p id="photoslide-description-2">
             {this.props.text}
           </p>
+          <Link to="/team" style={{textDecoration:'none'}}>
+          <div className="team-link-button">
+          <h1 className="team-link-title">Explore</h1>
+          <div className="team-link-white"/>
+          </div>
+          </Link>
         </div>
+       
         
         <div className="white-line"><div></div></div>
       </div>
@@ -47,4 +55,4 @@ export class PhotoSlide2 extends Component {
   }
 }
 
-export default PhotoSlide2
+export default TeamLink

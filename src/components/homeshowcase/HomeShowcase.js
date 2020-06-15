@@ -24,6 +24,7 @@ export class HomeShowcase extends Component {
           updateElements() {
             setTimeout(
                 function(){
+                  try{
             //text appear
             (document.getElementById("landing-title-container")).style.opacity="1";
             (document.getElementById("landing-title-container")).style.top="360px";
@@ -31,18 +32,22 @@ export class HomeShowcase extends Component {
             
             //image fade in
             (document.getElementById("landing-image-container")).style.opacity="1";
+                  }catch{}
                 }, 500)
           }
         
           moveArrow() { 
             setTimeout(
             function(){
+              try{
               document.getElementById("enter-arrow").style.top="50px"
               document.getElementById("enter-arrow").style.opacity="1"
               setTimeout(
                   function(){
                       document.getElementById("enter-arrow").style.opacity="0"},1000);
+                  }catch{}
                   },4000)
+                
           }
         
           updateShowcase = () => {

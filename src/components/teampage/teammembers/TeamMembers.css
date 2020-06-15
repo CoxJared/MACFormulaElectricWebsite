@@ -50,7 +50,7 @@
 }
 
 .team-member-name{
-color:#ddd;
+color:#fff;
 font-size: 25px;
 font-weight: 100;
 padding-bottom: 10px;
@@ -58,7 +58,7 @@ border-bottom:1px solid rgb(80, 80, 80);
 }
 
 .team-member-position{
-  color:#fff;
+  color:#aaa;
   font-weight: 100;
   margin-top:10px;
   font-size:20px;
@@ -67,7 +67,7 @@ border-bottom:1px solid rgb(80, 80, 80);
 .team-member-linkedin-button{
   margin-top:15px;
   border:2px solid rgb(98, 98, 98);
-  border-radius: 7px;
+  border-radius: 5px;
   width:30px;
   height:30px;
   transition:.5s ease-in-out;
