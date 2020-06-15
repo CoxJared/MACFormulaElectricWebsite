@@ -29,7 +29,7 @@ export class TeamMembers extends Component {
         position:'Mechanical Lead'},
         {name:'Dylan Boudreau',
         photo:dylanShot,
-        position:'Mechanical Lead'},
+        position:'Vehicle Dynamics Lead'},
         {name:'Harjot Nijjar',
         photo:harjotshot,
         position:'Controls Lead'},

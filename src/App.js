@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router,  Route } from 'react-router-dom';
-import HomePage from './components/homepage/HomePage';
-import CarsPage from './components/carspage/CarsPage';
-import TeamPage from './components/teampage/TeamPage';
-import SponsorsPage from './components/sponsorspage/SponsorsPage';
-import ContactPage from './components/contactpage/ContactPage';
+import HomePage from './components/homepage/HomePage.jsx';
+import CarsPage from './components/carspage/CarsPage.jsx';
+import TeamPage from './components/teampage/TeamPage.jsx';
+import SponsorsPage from './components/sponsorspage/SponsorsPage.jsx';
+import ContactPage from './components/contactpage/ContactPage.jsx';
 
 
 function App() {

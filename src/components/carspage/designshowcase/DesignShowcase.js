@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import arrow from './../../../img/arrow.png'
 
-import generalRender from './../../../img/renders/top-view-5k.png';
-import generalCartoon from './../../../img/renders/white-cartoon.JPG';
+import generalRender from './../../../img/renders/side-color.png';
+import generalCartoon from './../../../img/renders/side-outine.JPG';
 
 import chassisRender from './../../../img/renders/monocoque.png';
 import batteryRender from './../../../img/renders/battery cross section (2).png';
@@ -112,6 +112,7 @@ export class DesignShowcase extends Component {
             document.getElementById("design-text-container").style.opacity=(100);
             document.getElementById("design-text-container").style.top=(0);
             this.document.getElementById("design-image").style.opacity=(100);
+            this.document.getElementById("design-image-cartoon").style.opacity=(0);
         }
       } catch{}
     })
@@ -127,7 +128,7 @@ export class DesignShowcase extends Component {
               <p className="design-text-para">MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.</p>
             </div>
             <div className="design-image-container">
-              <img className="design-image-cartoon" src={generalCartoon} alt=""></img>
+              <img id="design-image-cartoon" src={generalCartoon} alt=""></img>
               <img id="design-image" src={generalRender} alt=""></img>
             </div>
           </div>

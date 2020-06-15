@@ -3,7 +3,7 @@ import { VideoScroll } from 'react-video-scroll'
 
 import './GearBoxExplosion.css'
 
-import explosionGif from './../../../img/test.mp4';
+// import explosionGif from './../../../img/test.mp4';
 
 const setStyles = (wrapperEl, videoEl, playbackRate) => {
 
@@ -36,7 +36,7 @@ export class GearBoxExplosion extends Component {
           style={{ width: '100%', objectFit: 'contain' }}
           playsInline
         >
-          <source type="video/mp4" src={explosionGif} />
+          {/* <source type="video/mp4" src={explosionGif} /> */}
         </video>
     </VideoScroll>
       </div>

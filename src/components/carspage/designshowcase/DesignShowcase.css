@@ -80,10 +80,11 @@
         /* border:1px solid red; */
       }
 
-        .design-image-cartoon{
+        #design-image-cartoon{
           width:100%;
           position: absolute;
           opacity: 1;
+          transition:4s;
         }
 
         #design-image {

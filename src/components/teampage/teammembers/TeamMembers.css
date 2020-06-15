@@ -2,7 +2,7 @@
   color:#fff;
   font-weight:100;
   font-size:40px;
-  width:1400px;
+  width:1250px;
   position: relative;
   margin:0 auto;
   /* padding-bottom: 20px; */
@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   position: relative;
   margin:0 auto;
+  justify-content: center;
 }
 
 .team-member-container{
@@ -25,7 +26,7 @@
   height:170px;
   /* border:1px solid #d42020; */
   overflow: hidden;
-  margin:40px;
+  margin:40px 20px;
   display: flex;
 }
 
@@ -39,7 +40,11 @@
   width:100%;
   /* width:200px; */
   object-fit:contain;
-  opacity:.7;
+  opacity:.6;
+  transition: 3s ease-in-out;
+}
+.team-member-container:hover .team-member-image{
+  opacity: .9;
 }
 
 .team-member-text-container{
