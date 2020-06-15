@@ -32,7 +32,7 @@ componentDidMount() {
   
               //Show Elements
               document.getElementById("photoslide-container").style.opacity=(1);
-              document.getElementById("description-container").style.top=(0);
+              document.getElementById("description-container").style.top='-40px';
           }
         }catch(err){
           console.log(err)}
@@ -47,6 +47,7 @@ componentDidMount() {
           <p id="photoslide-description">
             {this.props.text}
           </p>
+          {this.props.button}
         </div>
         <div className={`photoslide-image-container check-visible ${this.props.name}`}>
           <img className= "photoslide-image" src={this.props.img} alt=""/>

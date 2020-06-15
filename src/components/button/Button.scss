@@ -1,0 +1,35 @@
+.button{
+  position: relative;
+  border:1px solid #bbb;
+  width:250px;
+  margin-left: 20px;
+}
+.button:hover{
+  cursor: pointer;
+}
+.button-text{
+  text-align: center;
+  padding:20px 10px;
+  font-size:27px;
+  font-weight:100;
+  color:#fff;
+  transition:.5s ease-in-out;
+  // border:1px solid red;
+}
+.button:hover .button-text{
+  color:#111;
+}
+
+.button-background{
+  background:#fff;
+  position: absolute;
+  top:0;
+  width:0;
+  height:100%;
+  transition:.5s ease-in-out;
+  z-index: -1;
+
+}
+.button:hover .button-background{
+  width:100%;
+}

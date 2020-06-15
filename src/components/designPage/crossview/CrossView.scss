@@ -35,9 +35,11 @@ $lightFontWeight:100;
   text-align: justify;
 }
 
-.cross-view-image{
+#cross-view-image{
   object-fit: cover;
   position: relative;
   height:100%;
+  left:100px;
+  transition:2s ease-out;
 }
 

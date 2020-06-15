@@ -16,6 +16,7 @@ import sidePodshot from './../../img/parts/hybrid-side-pod.png';
 import GearBoxExplosion from './gearboxexplosion/GearBoxExplosion';
 import CompetitionShowcase from '../competitionshowcase/CompetitionShowcase';
 import Footer from '../footer/Footer';
+import Button from '../button/Button';
 
 
 export class HomePage extends Component {
@@ -78,7 +79,14 @@ export class HomePage extends Component {
                     img={noseShot}
                     title="Formula SAE Electric"
                     name="opening"
-                    text="Formula SAE and Formula Student challenge students to build a single seat, open wheeled racecar to compete against other schools at annual international competitions. There are many areas of evaluation in these competitions including engineering design, business and cost as well as numerous dynamic events."/>
+                    text="Formula SAE and Formula Student challenge students to build a single seat, open wheeled racecar to compete against other schools at annual international competitions. There are many areas of evaluation in these competitions including engineering design, business and cost as well as numerous dynamic events."
+                    button = {
+                        <a href={"https://www.sae.org/attend/student-events"} 
+                        style={{ textDecoration:'none', paddingLeft:'50px'}}
+                        target="_blank" rel="noopener noreferrer">
+                        <Button text="Explore"/>
+                        </a>}/> 
+                    
                     <ShowcaseLink 
                         backgroundImage = {amkBackground}
                         type = 'Video'
@@ -88,6 +96,7 @@ export class HomePage extends Component {
                                 <img className="play-button" src={playButton}/>
                             </a>}
                     />
+                    
                     <TeamLink
                     img={teamPhoto}
                     name="team"
