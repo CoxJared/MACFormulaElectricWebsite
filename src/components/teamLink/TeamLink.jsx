@@ -41,9 +41,9 @@ export class TeamLink extends Component {
             {this.props.text}
           </p>
           <Link to="/team" style={{textDecoration:'none'}}>
-          <div className="team-link-button">
-          <h1 className="team-link-title">Explore</h1>
-          <div className="team-link-white"/>
+            <div className="team-link-button">
+            <h1 className="team-link-title">Explore</h1>
+            <div className="team-link-white"/>
           </div>
           </Link>
         </div>

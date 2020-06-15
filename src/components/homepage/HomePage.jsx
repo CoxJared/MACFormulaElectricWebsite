@@ -17,6 +17,8 @@ import GearBoxExplosion from './gearboxexplosion/GearBoxExplosion';
 import CompetitionShowcase from '../competitionshowcase/CompetitionShowcase';
 import Footer from '../footer/Footer';
 import Button from '../button/Button';
+import InstagramPosts from '../instagramposts/InstagramPosts';
+import DesignLink from '../designlink/DesignLink';
 
 
 export class HomePage extends Component {
@@ -74,7 +76,6 @@ export class HomePage extends Component {
                         <span>MAC Formula Electric</span> is a student run team working to design and build a fully electric, formula style racecar
                         </h2>
                     </div>
-                    
                     <PhotoSlide 
                     img={noseShot}
                     title="Formula SAE Electric"
@@ -96,6 +97,7 @@ export class HomePage extends Component {
                                 <img className="play-button" src={playButton}/>
                             </a>}
                     />
+                    <DesignLink />
                     
                     <TeamLink
                     img={teamPhoto}
@@ -103,6 +105,7 @@ export class HomePage extends Component {
                     title="Team"
                     text="Every year, the team starts out by creating new goals. From there, a plan of action is formed, deadlines are established, and tasks are distributed between team members. Although Formula SAE is an engineering competition, the team requires more than just engineering students. As a result, a conscious effort is made to appeal to students with a variety of backgrounds, interests, and areas of study."/>
                     <CompetitionShowcase />
+                    <InstagramPosts/>
                     <Footer />
                 </div>
             )

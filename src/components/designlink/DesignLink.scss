@@ -2,7 +2,7 @@
 $textColor:#fff;
 $lightFontWeight:100;
 
-#cross-view-container{
+#design-link-container{
   position: relative;
   // border:1px solid red;
   width:100%;
@@ -12,7 +12,7 @@ $lightFontWeight:100;
   transition:2s ease-out;
 }
 
-#cross-view-text-container{
+#design-link-text-container{
   // border:1px solid blue;
   margin-top:200px;
   width:55%;
@@ -21,21 +21,23 @@ $lightFontWeight:100;
   
 }
 
-.cross-view-title{
+.design-link-title{
   color:$textColor;
-  font-size:70px;
+  font-size:65px;
   // border:1px solid red;
 }
 
-.cross-view-text{
+.design-link-text{
   color:$textColor;
   font-weight: $lightFontWeight;
   line-height: 1.5em;
   margin-top:40px;
   text-align: justify;
+  margin-bottom: 40px;
+  font-size: 20px;
 }
 
-#cross-view-image{
+#design-link-image{
   object-fit: cover;
   position: relative;
   height:100%;

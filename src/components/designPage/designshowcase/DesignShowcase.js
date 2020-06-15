@@ -9,6 +9,7 @@ import batteryRender from './../../../img/renders/battery cross section (2).png'
 import gearboxRender from './../../../img/renders/gearbox-exploded (1).png';
 import electronicsRender from './../../../img/renders/electronics.png';
 import suspensionRender from './../../../img/renders/suspension.png';
+import aerodynamicrender from './../../../img/renders/aerodynamics.png';
 
 import './DesignShowcase.css';
 
@@ -54,7 +55,7 @@ export class DesignShowcase extends Component {
         },{
           title: 'Aerodynamics',
           text: 'This year, we developed our first high-voltage battery with three priorities: high specific-power, high specific-energy, and optimized weight. This design will be capable of providing the maximum power to the vehicle for the entirety of the endurance run. With a charge time of approximately 35 minutes, we are able to reduce the downtime between runs and improve our teams overall efficiency.',
-          image:batteryRender
+          image:aerodynamicrender
         }
       ]
     }
@@ -136,7 +137,7 @@ export class DesignShowcase extends Component {
         {this.state.info.map(slide => (
           <div className="design-page">
           <div className="design-text-container">
-            <h2 className="design-text-car">MAC EV1</h2>
+            <h2 className="design-text-car">Zapdos</h2>
             <h1 className="design-text-title">{slide.title}</h1>
             <p className="design-text-para">{slide.text}</p>
           </div>
