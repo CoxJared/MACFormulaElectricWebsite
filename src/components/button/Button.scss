@@ -33,3 +33,23 @@
 .button:hover .button-background{
   width:100%;
 }
+
+@media only screen and (max-width: 1500px) {
+  .button{
+    width:17vw;
+    height:5vw;
+  }
+  .button:hover{
+    cursor: pointer;
+  }
+  .button-text{
+    font-size: 1.8vw;
+    padding:1.3vw;
+  }
+  .button:hover .button-text{
+  }
+  
+  .button-background{
+  }
+  
+}

@@ -79,7 +79,7 @@ export class MainShowcase extends Component {
             <h1 className="specs-heading">Overview</h1>
             <div id="spec">
               <h1 className="spec-title">Power</h1>
-              <h2 className="spec-value">200hp<span>/120kW</span></h2>
+              <h2 className="spec-value">107hp<span>/80kW</span></h2>
             </div>
             <div id="spec">
               <h1 className="spec-title">Weight</h1>
@@ -87,7 +87,7 @@ export class MainShowcase extends Component {
             </div>
             <div id="spec">
               <h1 className="spec-title">Capacity</h1>
-              <h2 className="spec-value">6.8 kWh<span></span></h2>
+              <h2 className="spec-value">6.6kWh<span></span></h2>
             </div>
             <div id="spec">
               <h1 className="spec-title">Drivetrain</h1>

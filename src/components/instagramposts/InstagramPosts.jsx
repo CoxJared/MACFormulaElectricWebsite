@@ -41,7 +41,7 @@ export class InstagramPosts extends Component {
             <img src={post1} className="instagram-image"></img>
             </div>
           </a>
-          <a href="https://www.instagram.com/p/B_KfTbjhIJg/">
+          <a href="https://www.instagram.com/p/B_KfTbjhIJg/" target="_blank">
             <div className="instagram-post">
             <img src={post2} className="instagram-image"></img>
             </div>

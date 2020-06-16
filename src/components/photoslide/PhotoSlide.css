@@ -29,7 +29,7 @@
     position: relative;
     width: 600px;
     height:500px;
-    top:50px;
+    top:0px;
     /* top:0; */
     transition: .6s;
     /* border: 1px solid blue; */
@@ -65,3 +65,46 @@
     .photoslide-image{
       width:100%;
     }
+
+  @media only screen and (max-width: 1500px) {
+    #photoslide-container{
+      /* border: 1px solid beige; */
+      padding:4vw 0;
+      width:100vw;
+      height:90vw;
+    }
+    
+      .white-line{
+        height:20px;
+        /* border: 1px solid beige; */
+      }
+      .white-line div{
+        height:20px
+      }
+    
+      #description-container{
+        height:40vw;
+        width:45vw;
+        /* border: 1px solid beige; */
+      }
+    
+        #photoslide-title{
+          font-size: 5vw;
+          padding:3vw 0 0 0;
+        }
+    
+        #photoslide-description{
+          font-size: 1.5vw;
+        }
+    
+      .photoslide-image-container{
+        width:48vw;
+        height:40vw;
+        margin-left:2vw;
+        /* border: 1px solid beige; */
+      }
+    
+        .photoslide-image{
+        }
+    
+  }
