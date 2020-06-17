@@ -23,7 +23,11 @@ export class TeamLink extends Component {
   
               //Show Elements
               document.getElementById("photoslide-container-2").style.opacity=(1);
+              if(this.window.innerWidth > 15000){
               document.getElementById("description-container-2").style.top="30px";
+              } else{
+                document.getElementById("description-container-2").style.top="2vw";
+              }
           }
         }catch(err){
           console.log(err)}

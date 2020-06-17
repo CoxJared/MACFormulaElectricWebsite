@@ -126,7 +126,7 @@ export class DesignShowcase extends Component {
             <div id="design-text-container">
               <h2 className="design-text-car">Zapdos</h2>
               <h1 className="design-text-title">General</h1>
-              <p className="design-text-para">MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.</p>
+              <p className="design-text-para">MAC Formula Electric emphasizes composite-oriented packaging across the vehicle. Unique techniques are utilized to mount everything from carbon fiber enclosures to composite firewalls to ensure structural integrity and maximum weight savings.</p>
             </div>
             <div className="design-image-container">
               <img id="design-image-cartoon" src={generalCartoon} alt=""></img>
