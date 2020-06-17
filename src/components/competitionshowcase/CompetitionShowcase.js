@@ -20,8 +20,13 @@ export class CompetitionShowcase extends Component {
 
             //Show Elements
             document.getElementById("competition-showcase-container").style.opacity=(1);
-            document.getElementById("competition-text-container").style.top="150px";
             document.getElementById("competition-image").style.left="-50px";
+            if (this.window.innerWidth < 1600)
+            {
+              document.getElementById("competition-text-container").style.top="10vw";
+            } else {
+            document.getElementById("competition-text-container").style.top="150px";
+            }
         }
       }catch(err){
         console.log(err)}
