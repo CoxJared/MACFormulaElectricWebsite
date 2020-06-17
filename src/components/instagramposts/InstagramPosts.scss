@@ -65,3 +65,57 @@
   object-fit: cover;
   height:100%;
 }
+
+
+@media only screen and (max-width: 1500px) {
+  #instagram-container{
+    margin-top:7vw;
+    width:100%;
+    height:40vw;
+    // border:1px solid red;
+  }
+  
+  .instagram-title{
+    font-size:2vw;
+    width:20vw;
+    padding:.5vw 0;
+    transition:.5s ease-in-out;
+  }
+  .instagram-title:hover{
+  }
+  .instagram-underline{
+  }
+  .instagram-title:hover .instagram-underline{
+  }
+  
+  .instagram-post-container{
+    width:100%;
+    height:30vw;
+    margin:3vw 0;
+    // border:1px solid blue;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .instagram-post{
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+    // border:1px solid blue;
+    overflow: hidden; 
+    // margin-left:30px;
+    // margin-right:auto;
+    opacity: .5;
+    transition: .6s ease-in-out;
+  }
+  .instagram-post:hover{
+    cursor: pointer;
+    opacity: .9;
+  }
+  .instagram-image{
+    position: relative;
+    object-fit: cover;
+    height:100%;
+  }
+}
