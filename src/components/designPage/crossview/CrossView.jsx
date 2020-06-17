@@ -16,8 +16,13 @@ export class CrossView extends Component {
 
             //Show Elements
             document.getElementById("cross-view-container").style.opacity=1;
-            document.getElementById("cross-view-text-container").style.marginTop='100px';
             this.document.getElementById("cross-view-image").style.left='0px';
+
+            if(this.window.innerWidth >1500) {
+              document.getElementById("cross-view-text-container").style.marginTop='100px';
+            } else {
+              document.getElementById("cross-view-text-container").style.marginTop='7vw';
+            }
             // document.getElementById("design-text-container").style.top=(0);
         }
       } catch{}

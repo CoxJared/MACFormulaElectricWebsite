@@ -43,3 +43,32 @@ $lightFontWeight:100;
   transition:2s ease-out;
 }
 
+@media only screen and (max-width: 1500px) {
+
+
+  #cross-view-container{
+    height:55vw;
+  }
+  
+  #cross-view-text-container{
+    margin-top:0vw;
+    width:55%;
+    padding: 1vw 0 0 2vw;
+  }
+  
+  .cross-view-title{
+    color:$textColor;
+    font-size:6vw;
+    
+  }
+  
+  .cross-view-text{
+    margin-top:3vw;
+    font-size:1.7vw;
+  }
+  
+  #cross-view-image{
+    left:50px;
+    transition:2s ease-out;
+  }  
+}
