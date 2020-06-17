@@ -18,9 +18,13 @@ export class DesignLink extends Component {
 
             //Show Elements
             document.getElementById("design-link-container").style.opacity=1;
-            document.getElementById("design-link-text-container").style.marginTop='200px';
             this.document.getElementById("design-link-image").style.left='0px';
-            // document.getElementById("design-text-container").style.top=(0);
+
+            if(this.window.innerWidth >1500){
+              document.getElementById("design-link-text-container").style.marginTop='200px';
+            } else {
+              document.getElementById("design-link-text-container").style.marginTop='10vw';
+            }
         }
       } catch{}
     })

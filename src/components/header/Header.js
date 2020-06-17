@@ -31,16 +31,8 @@ class Header extends Component{
                 var currentScrollPos = window.pageYOffset;
                 if(currentScrollPos > 50)
                 {
-                    // (document.getElementById("header")).style.color="#333";
-                    // (document.getElementById("header")).style.backgroundColor="#fff";
-                    // (document.getElementById("header")).style.boxShadow="3px 3px 10px grey";
-                    // (document.getElementById("donate-bav-bar-item")).style.color="#a55";
                 }
                 else{
-                    (document.getElementById("header")).style.color="#fff";
-                    (document.getElementById("header")).style.background="none";
-                    (document.getElementById("header")).style.boxShadow="none";
-                    // (document.getElementById("donate-bav-bar-item")).style.color="#fcc";
                 }
             }catch{}
             }

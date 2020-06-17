@@ -13,12 +13,14 @@
 #header  {
     display: flex;
     position: relative;
+    top:-0px;
+    transition:top 5s ease-in-out;
     width: 100%;
     max-width:1200px;
     height: 85px;
     color:#fff;
     margin:0 auto;
-    transition: color 0s ease;
+    transition: color 2s ease;
     transition: background-color .5s ease;
     opacity: .98;
 }
