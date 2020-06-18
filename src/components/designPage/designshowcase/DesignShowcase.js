@@ -4,12 +4,12 @@ import arrow from './../../../img/arrow.png'
 import generalRender from './../../../img/renders/side-color.png';
 import generalCartoon from './../../../img/renders/side-outine.JPG';
 
-import chassisRender from './../../../img/renders/chassis.png';
+import chassisRender from './../../../img/renders/chass.png';
 import batteryRender from './../../../img/renders/battery cross section (2).png';
 import gearboxRender from './../../../img/renders/gearbox-exploded (1).png';
 import electronicsRender from './../../../img/renders/electronics.png';
-import suspensionRender from './../../../img/renders/suspension.png';
-import aerodynamicrender from './../../../img/renders/aerodynamics.png';
+import suspensionRender from './../../../img/renders/susp.png';
+import aerodynamicrender from './../../../img/renders/aero.png';
 
 import './DesignShowcase.css';
 
