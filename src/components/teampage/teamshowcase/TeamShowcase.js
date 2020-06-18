@@ -10,7 +10,12 @@ export class TeamShowcase extends Component {
     setTimeout(function() {
       document.getElementById("team-showcase-container").style.opacity = 1;
       document.getElementById("team-showcase-image").style.left=0;
-      document.getElementById("team-showcase-text-container").style.top = "-55vh";
+
+      if (window.innerWidth >1200) {
+        document.getElementById("team-showcase-text-container").style.top = "-55vh";
+      } else {
+        document.getElementById("team-showcase-text-container").style.top = "-47vw";
+      }
     },500);
   }
   render() {
