@@ -15,7 +15,7 @@ componentDidMount() {
   window.scrollTo(0, 0)
   setTimeout(function() {
     document.getElementById("sponsorship-top-showcase").style.opacity = 1;
-    document.getElementById("sponsorship-top-showcase-text").style.top = "-95vh";
+    document.getElementById("sponsorship-top-showcase-text").style.top = "300px";
     document.getElementById("sponsorship-top-showcase-image").style.right = "50px";
   },500);
 }

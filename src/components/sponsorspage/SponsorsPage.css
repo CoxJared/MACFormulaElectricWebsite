@@ -1,6 +1,9 @@
+*{
+  /* border:1px solid red; */
+}
 #sponsorship-top-showcase{
   width:100%;
-  height:100vh;
+  height:100%;
   overflow: hidden;
   opacity: 0;
   transition:1s;
@@ -20,27 +23,32 @@
 
 #sponsorship-top-showcase-text{
   /* border: 1px solid red; */
-  position: relative;
-  top:-80vh;
+  position: absolute;
+  top:100px;
   /* top:100vh; */
   transition:1s ease-out;
-  width:1000px;
+  width:100%;
+  max-width: 100%;
   margin:0 auto 100px;
 }
 
 #sponsorship-top-showcase h1 {
+  position: relative;
   color:#fff;
+  width:1000px;
+  margin:0 auto;
   font-size:90px;
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
 }
 #sponsorship-top-showcase h2 {
-  margin-top:17px;
+  width:900px;
+  margin:17px auto;
   color:#eee;
   text-align: center;
   font-weight: 300;
   font-size:30px;
-  padding:0 150px;
+  padding:0;
 }
 
 .sponsorship-top-showcase-image{
@@ -90,4 +98,8 @@ z-index: -1;
 .sponsorship-package-container:hover .sponsorship-package-title{
   color:#111;
   z-index: 200;
+}
+
+@media only screen and (max-width: 1500px) {
+
 }

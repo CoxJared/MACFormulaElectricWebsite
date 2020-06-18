@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './HomeShowcase.css';
 
-import darkImage from './../../img/renders/red-front.png';
-import lightImage from './../../img/renders/home-lit.png';
+import darkImage from './../../img/renders/newer-red.png';
+import lightImage from './../../img/renders/newer-light.png';
 import arrow from './../../img/arrow.png'
 
 export class HomeShowcase extends Component {

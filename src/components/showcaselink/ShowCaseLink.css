@@ -45,3 +45,45 @@ transition:15s;
     margin-bottom:15px;
     font-weight:200;
   }
+
+
+
+  @media only screen and (max-width: 1000px) {
+    #showcase-link-container{
+    }
+    
+      #showcase-link-photo{
+        width: 110%;
+        left:0;
+        position:absolute;
+        bottom:0;
+        opacity: .6;
+        transition:7s;
+      }
+      .showcase-link-linked-container{
+        width:30vw;
+        height:30vw;
+        margin-top:10vw;
+        margin-left:calc(50vw - 200px);
+      }
+    
+    
+      .showcase-link-text {
+        position: absolute;
+        bottom:17vh;
+        right:3vw;
+        width:30vw;
+      }
+      .showcase-link-text h1{
+        color:#fff;
+        text-align: left;
+        font-size:60px;
+      }
+      .showcase-link-text h2{
+        color:#fff;
+        text-align: left;
+        font-size:25vw;
+        margin-bottom:15px;
+        font-weight:200;
+      }
+  }

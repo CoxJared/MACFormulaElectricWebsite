@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import fullimage from './../../../img/renders/front-full-2019.png'
-import cutimage from './../../../img/renders/cut-away-render.png'
+import fullimage from './../../../img/renders/another-full.png'
+import cutimage from './../../../img/renders/newer-cut.png'
 
 import './MainShowcase.css';
 
@@ -31,13 +31,13 @@ export class MainShowcase extends Component {
 
   render() {
     window.onscroll = function() {
-      let delay=300;
+      let delay=200;
 
       try{
         var currentScrollPos = window.pageYOffset;
 
         //show car cross section
-        document.getElementById("image-full").style.width=( 750 - (currentScrollPos-delay)/1 + "px");
+        document.getElementById("image-full").style.width=( 720 - (currentScrollPos-delay)/1 + "px");
 
         //move description up
         document.getElementById("text-container").style.top=( - currentScrollPos + 260 + "px");

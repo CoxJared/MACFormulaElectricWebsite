@@ -27,10 +27,10 @@
       position: absolute;
       width:750px;
       max-width:750px;
-      min-width:420px;
+      min-width:437px;
       height:700px;
       /* border:2px solid blue; */
-      background: url('./../../../img/renders/front-full-2019.png');
+      background: url('./../../../img/renders/another-full.png');
       background-size: cover;
     }
 
@@ -39,7 +39,7 @@
       width:750px;
       height:700px;
       /* border:2px solid blue; */
-      background: url('./../../../img/renders/cut-away-render.png');
+      background: url('./../../../img/renders/newer-cut.png');
       background-size: cover;
     }
 
