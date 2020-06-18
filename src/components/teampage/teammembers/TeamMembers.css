@@ -94,3 +94,94 @@ border-bottom:1px solid rgb(80, 80, 80);
 .team-member-linkedin-button:hover .team-memebr-linkedin-name{
   color:rgb(54, 175, 255);
 }
+
+
+@media only screen and (max-width: 1400px) {
+  *{
+    /* border: 1px solid red; */
+  }
+  .team-members-section-name{
+    font-size:3.5vw;
+    width:100%;
+    /* padding-left:3vw; */
+    margin:0 auto;
+    margin-bottom:2vw;
+    text-align: center;
+  }
+  
+  .team-members-container{
+    width:100%;
+    margin:0 auto;
+  }
+  
+  .team-member-container{
+    position: relative;
+    width:30vw;
+    height:15vw;
+    margin:3vw 1vw;
+  }
+  
+  .team-member-image-container{
+    position: relative;
+    width:15vw;
+  }
+  .team-member-image{
+  }
+  .team-member-container:hover .team-member-image{
+  }
+  
+  .team-member-text-container{
+    width:16vw;
+    /* border:1px solid blue; */
+    padding:.5vw 0 0 .5vw;
+  }
+  
+  .team-member-name{
+  font-size: 2vw;
+  padding-bottom: .7vw;
+  }
+  
+  .team-member-position{
+    margin-top:.7vw;
+    font-size:1.5vw;
+  }
+  
+  .team-member-linkedin-button{
+    margin-top:.5vw;
+    border:2px solid rgb(98, 98, 98);
+    border-radius: 5px;
+    width:30px;
+    height:30px;
+    transition:.5s ease-in-out;
+  }
+  
+  .team-memebr-linkedin-name{
+    color:rgb(114, 114, 114);
+    padding:1px 0 0 4px;
+    font-weight: 600;
+    font-size:21px;
+    transition:.5s ease-in-out;
+  }
+  
+  .team-member-linkedin-button:hover{
+    cursor: pointer;
+    border:2px solid rgba(54, 175, 255, 0.692);
+  }
+  
+  .team-member-linkedin-button:hover .team-memebr-linkedin-name{
+    color:rgb(54, 175, 255);
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .team-member-container{
+    width:40vw;
+    height:17vw;
+  }
+
+  .team-member-image-container{
+    width:17vw;
+  }
+  
+}

@@ -52,13 +52,9 @@
 
 
 @media only screen and (max-width: 1200px) {
-*{
-  border:1px solid red;
-}
 
   #team-showcase-container{
     height:65vw;
-    border:1px solid blue;
   }
   
   #team-showcase-image{
@@ -73,7 +69,6 @@
     bottom:0;
     left:0;
     background-image: linear-gradient( rgba(255,0,0,0), rgb(0, 0, 0));
-    border: 1px solid red;
   }
   #team-showcase-text-container{
     position: relative;
