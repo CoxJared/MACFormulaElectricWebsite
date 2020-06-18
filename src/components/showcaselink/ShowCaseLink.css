@@ -48,7 +48,7 @@ transition:15s;
 
 
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1500px) {
     #showcase-link-container{
     }
     
@@ -63,27 +63,22 @@ transition:15s;
       .showcase-link-linked-container{
         width:30vw;
         height:30vw;
-        margin-top:10vw;
-        margin-left:calc(50vw - 200px);
+        margin-top:15vw;
+        margin-left:42vw;
       }
     
     
       .showcase-link-text {
         position: absolute;
-        bottom:17vh;
+        bottom:7vw;
         right:3vw;
         width:30vw;
       }
       .showcase-link-text h1{
-        color:#fff;
-        text-align: left;
-        font-size:60px;
+        font-size:5vw;
       }
       .showcase-link-text h2{
-        color:#fff;
-        text-align: left;
-        font-size:25vw;
-        margin-bottom:15px;
-        font-weight:200;
+        font-size:2.5vw;
+        margin-bottom:1vw;
       }
   }
