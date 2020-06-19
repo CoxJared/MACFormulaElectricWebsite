@@ -265,42 +265,49 @@ export class SponsorExplorer extends Component {
                   </> 
               ))}
             </div>
-{/* 
-            <h1 className="sponsor-type-heading"><span>Gold Sponsors</span></h1>
-                <div className="sponsor-container gold">
-                    {this.state.gold.map(sponsor => (
-                        <>
-                        <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
-                        <img className="sponsors-logo" src={sponsor.img} alt="gold-sponsor"/>
-                        <h1>{sponsor.name}</h1>    
-                        </a>  
-                        </> 
-                    ))}
 
-                </div>
-                
-                <h1 className="sponsor-type-heading"><span>Silver Sponsors</span></h1>
-                <div className="sponsor-container silver">
-                {this.state.silver.map(sponsor => (
-                        <>
-                        <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
-                        <img className="sponsors-logo" src={sponsor.img} alt="silver-sponsor"/>
-                        <h1>{sponsor.name}</h1>    
-                        </a>  
-                        </> 
-                    ))}
-                </div>
-                <h1 className="sponsor-type-heading"><span>Bronze Sponsors</span></h1>
-                <div className="sponsor-container software">
-                    {this.state.software.map(sponsor => (
-                        <>
-                        <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
-                        <img className="sponsors-logo" src={sponsor.img} alt="bronze-sponsor"/>
-                        <h1>{sponsor.name}</h1>    
-                        </a>  
-                        </> 
-                    ))}
-                </div> */}
+            <h1 className="sponsor-type-heading"><span>Silver Sponsors</span></h1>
+            <div className="sponsor-container silver">
+              {this.state.silver.map(sponsor => (
+                  <>
+                  <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
+                  <img className="sponsors-logo" src={sponsor.img} alt="platinum-sponsor"/>
+                  <div className="sponsors-text-container">
+                    <h1>{sponsor.name}</h1>
+                    <h2 className="sponsor-text-description">
+                        {sponsor.description}
+                    </h2>
+                  </div>   
+                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  <div className="sponsor-flag" style={{background:sponsor.color}}>
+                      <h1 className="sponsor-flag-text">Visit
+                          </h1></div> 
+                  </a>  
+                  </> 
+              ))}
+            </div>
+
+            <h1 className="sponsor-type-heading"><span>Bronze Sponsors</span></h1>
+            <div className="sponsor-container silver">
+              {this.state.software.map(sponsor => (
+                  <>
+                  <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
+                  <img className="sponsors-logo" src={sponsor.img} alt="platinum-sponsor"/>
+                  <div className="sponsors-text-container">
+                    <h1>{sponsor.name}</h1>
+                    <h2 className="sponsor-text-description">
+                        {sponsor.description}
+                    </h2>
+                  </div>   
+                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  <div className="sponsor-flag" style={{background:sponsor.color}}>
+                      <h1 className="sponsor-flag-text">Visit
+                          </h1></div> 
+                  </a>  
+                  </> 
+              ))}
+            </div>
+
       </div>
     )
   }
