@@ -1,16 +1,66 @@
-.gearbox-explosion-container {
+#zapdos-container {
   width:100%;
-  height:2000px;
+  height:calc(100vh + 400px);
   position: relative;
-  border:1px solid blue;
-  background:#555;
-  /* margin-top:200px; */
+  /* border:1px solid blue; */
+  /* margin-top:100px; */
+  overflow: hidden;
+  opacity: 0;
+  transition:2s ease-out;
+}
+
+#zapdos-video-container{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  /* border:1px solid green; */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+#zapdos-video{
+  position: absolute;
+  /* top:-40px;
+  left:-400px; */
+  opacity: 1;
+  /* top:20vh; */
+  width:3500px;
+  min-width:2400px;
+  /* border:1px solid red; */
+  overflow: hidden;
+  padding-top:0px;
+  margin-left:-50px;
+  opacity:.4
 }
 
 
-.gearbox-explosion-video{
-  border:1px solid red;
-  position: fixed;
-  top:20vh;
-  height:100vh;
+#landing-title-container {
+  width:1200px;
+  position: absolute;
+  justify-content: center;
+  top:400px;
+  margin:0 calc(50vw - 600px);
+
+  opacity: 1;
+  z-index: 10;
+  transition: 1s;
+}
+
+.landing-title {
+  color:#fff;
+  margin:0 auto;
+  font-size:100px;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+
+#landing-subtitle{
+  color:#fff;
+  margin-top:20px;
+  font-size:32px;
+  text-align: center;
+  transition: 1s;
+  font-weight: lighter;
 }

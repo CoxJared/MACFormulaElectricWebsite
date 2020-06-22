@@ -201,3 +201,140 @@
       background-color:#fff;
       height:2px;
     }
+
+
+  @media only screen and (max-width: 1600px) {
+    /* *{border: 1px solid red;} */
+
+    .design-container{
+      width:100%;
+      height:55vw;
+      margin:4vw auto;
+    }
+    
+    #design-moving-container{
+    }
+        .design-page {
+          width:100%;
+          height:100%;
+        }
+    
+          #design-text-container {
+            width:30vw;
+            height:100%;
+            padding:5vw 1vw;
+            position: relative;
+            top:10vw;
+    
+          }
+          .design-text-container {
+            width:100%;
+            height:100%;
+            padding:5vw 1vw;
+          }
+    
+            .design-text-car{
+              font-size:2vw;
+              padding-left:1vw;
+              /* border:1px solid blue */
+            }
+    
+            .design-text-title{
+              font-size:4vw;
+              /* border:1px solid blue; */
+              margin:2vw 0 2vw;
+            }
+    
+            .design-text-para{
+              font-size:1.7vw;
+            }
+    
+          .design-image-container {
+            width:60vw;
+            height:100%;
+            margin-top:6vw;
+          }
+    
+            #design-image-cartoon{
+              width:100%;
+            }
+    
+            #design-image {
+              width:100%;
+            }
+            .design-image {
+              width:100%;
+            }
+    
+    
+    
+    
+    
+    
+    .left-buttom{
+      position: absolute;
+      left:1vw;
+      width:6vw;
+      height:6vw;
+    }
+    
+    .left-buttom:hover {
+    }
+    
+    .left-arrow{
+    }
+    
+    .right-buttom{
+      position: absolute;
+      right:1vw;
+      width:6vw;
+      height:6vw;
+    }
+    
+    .right-buttom:hover {
+    }
+    
+    .right-arrow{
+    }
+    
+    .design-selector {
+      position: absolute;
+      width:calc(70vw);
+      height:5vw;
+      bottom:2vw;
+      right:calc(15vw);
+      /* background-color:red; */
+      /* display: flex; */
+    
+    }
+    
+      .design-selection-container {
+        width:10vw;
+        /* border:1px solid blue; */
+        padding:1vw;
+      }
+      .design-selection-container:hover{
+      }
+    
+    
+        .design-selection-name{
+          font-size:1vw;
+          width:7vw;
+          height:2vw;
+          /* border:1px solid green; */
+        }
+        .design-selection-container:hover .design-selection-name{
+        }
+    
+        .design-selection-bar {
+          height:1px;
+        }
+        .design-selection-container:hover .design-selection-bar {
+          background-color:#fff;
+          height:1px;
+        }
+        .selected-bar{
+          background-color:#fff;
+          height:1px;
+        }
+  }

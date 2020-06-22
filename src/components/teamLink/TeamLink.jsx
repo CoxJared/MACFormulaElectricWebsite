@@ -13,7 +13,6 @@ export class TeamLink extends Component {
       window.addEventListener('scroll', function (event) {
         try{
           
-          console.log(className)
           var bounding = document.querySelector(className).getBoundingClientRect();
 
           let halfHeight = 200

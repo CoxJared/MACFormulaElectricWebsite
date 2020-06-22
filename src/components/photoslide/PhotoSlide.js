@@ -22,7 +22,6 @@ componentDidMount() {
       window.addEventListener('scroll', function (event) {
         try{
           
-          console.log(className)
           var bounding = document.querySelector(className).getBoundingClientRect();
 
           let halfHeight = 100
@@ -34,8 +33,8 @@ componentDidMount() {
               document.getElementById("photoslide-container").style.opacity=(1);
               document.getElementById("description-container").style.top='-40px';
           }
-        }catch(err){
-          console.log(err)}
+        }catch{
+        }
       })
     
 
