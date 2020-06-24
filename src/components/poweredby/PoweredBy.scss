@@ -3,7 +3,7 @@
 #powered-by-container{
   // border:1px solid red;
   position: absolute;
-  bottom:240px;
+  bottom:calc(50vh - 220px);
   left:calc(50vw - 550px);
   width:500px;
   height:450px;
@@ -61,7 +61,7 @@ transition:1s ease-out;
   height:100%;
   object-fit: contain;
   background-color: #fff;
-  opacity:.65;
+  opacity:.85;
   transition:.3s ease-in-out;
 }
 .powered-by-sponsor-image:hover{

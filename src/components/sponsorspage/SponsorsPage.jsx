@@ -9,6 +9,8 @@ import sidePodshot from './../../img/parts/hybrid-side-pod.png';
 import SponsorExplorer from './sponsorexplorer/SponsorExplorer';
 import Footer from '../footer/Footer';
 
+import sponsorShipPackage from './../../MACFE_Sponsorship_package.pdf';
+
 export class SponsorsPage extends Component {
 
 componentDidMount() {
@@ -40,15 +42,21 @@ componentDidMount() {
         </div>
         <SponsorExplorer />
         <ShowcaseLink 
-                        backgroundImage = {sidePodshot}
-                        type = 'Link'
-                        title = 'Sponsorship Package'
-                        linkContainer =           
-                            {<div className="sponsorship-package-container">
-                                <div className="sponsorship-package-background"/>
-                                <h1 className="sponsorship-package-title">Open</h1>
-                            </div>}
-                    />
+          backgroundImage = {sidePodshot}
+          type = 'Link'
+          title = 'Sponsorship Package'
+          linkContainer =           
+              {
+                <a href={sponsorShipPackage} target='_blank' style={{textDecoration:'none'}}>
+              <div className="sponsorship-package-container">
+
+
+                  <div className="sponsorship-package-background"/>
+                  <h1 className="sponsorship-package-title">Open</h1>
+                  
+              </div>
+              </a>}
+        />
         <Footer />
       </div>
     )

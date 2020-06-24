@@ -87,12 +87,12 @@ export class HomeShowcase extends Component {
                   this.updateShowcase()
                 }
                 else{
-                  (document.getElementById("landing-image-dark")).style.opacity= 1;
-                  (document.getElementById("landing-title-container")).style.opacity="1";
-                  (document.getElementById("landing-title-container")).style.top="360px";
-                  (document.getElementById("landing-image-container")).style.left= '0';
-                  // (document.getElementById("landing-image-container")).style.maxWidth="900px";
-                  this.setState({entered:false});
+                  // (document.getElementById("landing-image-dark")).style.opacity= 1;
+                  // (document.getElementById("landing-title-container")).style.opacity="1";
+                  // (document.getElementById("landing-title-container")).style.top="360px";
+                  // (document.getElementById("landing-image-container")).style.left= '0';
+                  // // (document.getElementById("landing-image-container")).style.maxWidth="900px";
+                  // this.setState({entered:false});
 
                 }
   
