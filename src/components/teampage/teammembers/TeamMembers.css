@@ -11,13 +11,13 @@
 }
 
 .team-members-container{
-  width:1500px;
+  width:1320px;
   /* border:1px solid red; */
   display: flex;
   flex-wrap: wrap;
   position: relative;
   margin:0 auto;
-  justify-content: center;
+  justify-content: letf;
 }
 
 .team-member-container{

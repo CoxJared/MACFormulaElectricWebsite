@@ -8,6 +8,7 @@ import jessieShot from './../../../img/team-members/jessie.jpg';
 import scottShot from './../../../img/team-members/scott.jpg';
 import dylanShot from './../../../img/team-members/dylan.jpg';
 import harjotshot from './../../../img/team-members/harjot.jpg';
+import ashleyShot from './../../../img/team-members/ashley.jpeg';
 
 
 export class TeamMembers extends Component {
@@ -18,21 +19,25 @@ export class TeamMembers extends Component {
         {name:'Jessie Boudreau',
         photo:jessieShot,
         position:'Team Lead'},
-        {name:'Scott Suthland',
-        photo:scottShot,
-        position:'Electrical Lead'},
-        {name:'Jared Cox',
-        photo:jaredShot,
-        position:'Mechanical Lead'},
         {name:'Blaire Pauli',
         photo:blaireShot,
         position:'Mechanical Lead'},
+        
+        {name:'Scott Suthland',
+        photo:scottShot,
+        position:'Electrical Lead'},
         {name:'Dylan Boudreau',
         photo:dylanShot,
         position:'Vehicle Dynamics Lead'},
         {name:'Harjot Nijjar',
         photo:harjotshot,
         position:'Controls Lead'},
+        {name:'Ashley Majnaric',
+        photo:ashleyShot,
+        position:'Business Lead'},
+        {name:'Jared Cox',
+        photo:jaredShot,
+        position:'Mechanical Lead'},
       ]
     }
   }

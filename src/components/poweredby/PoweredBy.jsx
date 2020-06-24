@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './PoweredBy.scss';
+import { Link } from 'react-router-dom';
 
 import gmLogo from './../../img/sponsor-logos/gm-logo.png';
 import altiumLogo from './../../img/sponsor-logos/altium-logo.png';
@@ -22,6 +23,9 @@ import electroMeters from './../../img/sponsor-logos/electro-meters-logo.png';
 
 
 let sponsors = [
+  {logo:mcmasterLogo,
+    link:"",
+    color:"rgb(94,22,51)"},
   {logo:gmLogo,
     link:"",
     color:"rgb(46,86,153)"},
@@ -37,9 +41,7 @@ let sponsors = [
   {logo:linimarLogo,
     link:"",
     color:"rgb(196,94,37)"},
-  {logo:mcmasterLogo,
-    link:"",
-    color:"rgb(94,22,51)"},
+
   {logo:solidworksLogo,
     link:"",
     color:"rgb(209,73,67)"},
@@ -87,21 +89,42 @@ export class PoweredBy extends Component {
   showComponents() {
     document.getElementById("powered-by-container").style.opacity=.7;
   }
-  render() {
+  hideComponents() {
+    document.getElementById("powered-by-container").style.opacity=0;
+  }
+
+  componentDidUpdate(){
     if(this.props.show) {
-      this.showComponents()
+      this.showComponents();
+    } else{
+      this.hideComponents();
     }
+  }
+
+  render() {
     return (
       <div id="powered-by-container">
-        <h1 className="powered-by-title">Powered By</h1>
         <div className="powered-by-sponsors-container">
+        <h1 className="powered-by-title">Powered By 
+        
+          <span className="powered-by-view-all">
+            <Link to="/sponsors">
+              <h1 className="view-all-text">View All</h1>
+            </Link>
+          </span>
+        </h1>
+        
           {sponsors.map(sponsor => (
             <a className="powered-by-sponsor" href={sponsor.link} target="_blank" rel="noopener noreferrer"
-              style={{borderColor:sponsor.color}}>
+              style={{borderColor:sponsor.color,
+              // boxShadow:`2px 3px 3px ${sponsor.color}`
+              }}>
               <img className="powered-by-sponsor-image" src={sponsor.logo}/>
             </a>
             ))}
+            
         </div>
+
       </div>
     )
   }

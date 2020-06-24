@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './HomeShowcase.css';
 
-import darkImage from './../../img/renders/front-reeed.png';
-import lightImage from './../../img/renders/front-light.png';
+import darkImage from './../../img/renders/showcase-red.png';
+import lightImage from './../../img/renders/showcase-light.png';
 import arrow from './../../img/arrow.png'
 import PoweredBy from '../poweredby/PoweredBy';
 import InstagramShowcase from '../instagramshowcase/InstagramShowcase';
@@ -28,13 +28,14 @@ export class HomeShowcase extends Component {
             setTimeout(
                 function(){
                   try{
-            //text appear
-            (document.getElementById("landing-title-container")).style.opacity="1";
-            (document.getElementById("landing-title-container")).style.top="360px";
-            (document.getElementById("landing-subtitle")).style.marginTop="0px";
-            
-            //image fade in
-            (document.getElementById("landing-image-container")).style.opacity="1";
+                  //text appear
+                  (document.getElementById("landing-title-container")).style.opacity="1";
+                  (document.getElementById("landing-title-container")).style.top="360px";
+                  (document.getElementById("landing-subtitle")).style.marginTop="0px";
+                  (document.getElementById("landing-image-container")).style.left= '0px';
+
+                  //image fade in
+                  (document.getElementById("landing-image-container")).style.opacity="1";
                   }catch{}
                 }, 500)
           }
@@ -57,11 +58,10 @@ export class HomeShowcase extends Component {
             (document.getElementById("landing-image-dark")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.top= '00px';
-            (document.getElementById("landing-image-container")).style.maxWidth="800px";
+            // (document.getElementById("landing-image-container")).style.maxWidth="800px";
             (document.getElementById("landing-image-container")).style.marginTop="00px";
             // (document.getElementById("landing-image-container")).style.paddingLeft="100px";
-            // (document.getElementById("landing-image-container")).style.left= '-200px';
-            // (document.getElementById("landing-image-container")).style.width= '1550px';
+            (document.getElementById("landing-image-container")).style.left= '280px';
 
             this.props.DidEnter()
             this.setState({entered:true})
@@ -82,8 +82,7 @@ export class HomeShowcase extends Component {
           checkScrolling = () => {
             //if scroll down
             window.onscroll = () => {
-              try{ //User can switch pages and this still attempts to find the IDs
-                //updateShowcase
+              try{ 
                 if(window.pageYOffset > 90){
                   this.updateShowcase()
                 }
@@ -91,7 +90,10 @@ export class HomeShowcase extends Component {
                   (document.getElementById("landing-image-dark")).style.opacity= 1;
                   (document.getElementById("landing-title-container")).style.opacity="1";
                   (document.getElementById("landing-title-container")).style.top="360px";
-                  
+                  (document.getElementById("landing-image-container")).style.left= '0';
+                  // (document.getElementById("landing-image-container")).style.maxWidth="900px";
+                  this.setState({entered:false});
+
                 }
   
                 //unfix page
@@ -109,8 +111,6 @@ export class HomeShowcase extends Component {
         
             this.checkScrolling()
 
-        
-              
             return (
               <div className="landing-ether">
               <div id="landing-page-container">
@@ -125,9 +125,10 @@ export class HomeShowcase extends Component {
                 <div className="enter-arrow-container" onClick={this.moveLanding}>
                   <img id="enter-arrow" src={arrow} alt=""></img>
                 </div>
+                <PoweredBy show={this.state.entered} moveup={this.props.didPassShowcase}/>
+              <InstagramShowcase show={this.state.entered} moveup={this.props.didPassShowcase}/>
               </div>
-              <PoweredBy show={this.state.entered}/>
-              <InstagramShowcase show={this.state.entered}/>
+              
               </div>
             )
           }

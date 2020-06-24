@@ -12,22 +12,36 @@ export class InstagramShowcase extends Component {
   }
 
   showComponents() {
-    document.getElementById("instagram-showcase-container").style.opacity="1"
+    document.getElementById("instagram-showcase-container").style.opacity="1";
+  }
+
+  moveUp() {
+    document.getElementById("instagram-showcase-container").style.top="-100%";
+    document.getElementById("instagram-showcase-container").style.opacity="0";
   }
 
   hideComponents(){
-    document.getElementById("instagram-showcase-container").style.opacity="1"
+    document.getElementById("instagram-showcase-container").style.opacity="0";
+  }
+
+
+  componentDidUpdate() {
+    if (this.props.show){
+      this.showComponents();
+    } else if(this.props.moveUp){
+      this.moveUp();
+    } else {
+      this.hideComponents();
+    }
   }
 
   render() {
-    if (this.props.show){
-      this.showComponents();
-    }
+   
 
     return (
       <div id="instagram-showcase-container">
         {/* <div className="instagram-showcase-post-co"> */}
-          <div className="instagram-showcase-post instagram-showcase-post-1">
+          {/* <div className="instagram-showcase-post instagram-showcase-post-1">
           <img src={post3} className="instagram-showcase-image"></img>
           </div>
           <div className="instagram-showcase-post instagram-showcase-post-2">
@@ -35,7 +49,8 @@ export class InstagramShowcase extends Component {
           </div>
           <div className="instagram-showcase-post instagram-showcase-post-3">
           <img src={post1} className="instagram-showcase-image"></img>
-          </div>
+          </div> */}
+          {/* <h1>Who We Are</h1> */}
         </div>
         
       // </div>
