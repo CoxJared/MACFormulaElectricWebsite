@@ -29,7 +29,7 @@ export class DesignPage extends Component {
 
     return (
       <div className="cars-container">
-        {/* <Header /> */}
+        <Header />
         <MainShowcase scrollPosition={this.state.scrollPosition}/>
         <CrossView />
         <DesignShowcase testfunction={this.test}/>

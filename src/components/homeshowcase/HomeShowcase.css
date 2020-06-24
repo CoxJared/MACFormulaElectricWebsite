@@ -11,13 +11,13 @@
   
     #landing-image-container {
       width:65%;
-      max-width:1200px;
+      max-width:900px;
       height:100%;
       position: relative;
-      margin:0 auto;
+      margin:50px auto;
       justify-content: center;
       opacity: 0;
-      transition:8s ease;
+      transition:7s ease;
     }
   
       #landing-image{

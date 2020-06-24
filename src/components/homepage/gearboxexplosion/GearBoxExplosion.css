@@ -6,7 +6,7 @@
   /* margin-top:100px; */
   overflow: hidden;
   opacity: 0;
-  transition:2s ease-out;
+  transition:3s ease-out;
 }
 
 #zapdos-video-container{
@@ -25,13 +25,13 @@
   left:-400px; */
   opacity: 1;
   /* top:20vh; */
-  width:3500px;
-  min-width:2400px;
+  width:1200px;
+  min-width:1300px;
   /* border:1px solid red; */
   overflow: hidden;
-  padding-top:0px;
-  margin-left:-50px;
-  opacity:.4
+  padding-top:200px;
+  /* margin-left:-50px; */
+  opacity:1
 }
 
 

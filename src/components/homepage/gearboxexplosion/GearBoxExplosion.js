@@ -3,13 +3,14 @@ import { VideoScroll } from 'react-video-scroll'
 
 import './GearBoxExplosion.css'
 
-import explosionGif from './../../../img/zapdos.mp4';
+import explosionGif from './../../../img/test.mp4';
 
 const setStyles = (wrapperEl, videoEl, playbackRate) => {
   wrapperEl.style.marginTop = '-100px'
   wrapperEl.style.marginBottom = '-100px'
 
 }
+
 
 export class GearBoxExplosion extends Component {
 
@@ -33,7 +34,7 @@ export class GearBoxExplosion extends Component {
           document.getElementById("zapdos-video-container").style.position="fixed"
           document.getElementById("zapdos-video-container").style.top="0px";
 
-          document.getElementById("zapdos-video").style.width=(3500-currentScrollPos*3)+"px";
+          // document.getElementById("zapdos-video").style.width=(3500-currentScrollPos*3)+"px";
           // document.getElementById("zapdos-video").style.marginLeft=(-currentScrollPos/10)-50+"px";
           document.getElementById("zapdos-video").style.opacity=(400+currentScrollPos/10)+"%";
           // document.getElementById("zapdos-video").style.paddingTop=(50+currentScrollPos/5)+"px";

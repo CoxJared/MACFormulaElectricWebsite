@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './HomeShowcase.css';
 
-import darkImage from './../../img/renders/newer-red.png';
-import lightImage from './../../img/renders/newer-light.png';
+import darkImage from './../../img/renders/front-reeed.png';
+import lightImage from './../../img/renders/front-light.png';
 import arrow from './../../img/arrow.png'
+import PoweredBy from '../poweredby/PoweredBy';
 
 export class HomeShowcase extends Component {
 
@@ -54,6 +55,10 @@ export class HomeShowcase extends Component {
             (document.getElementById("landing-image-dark")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.top= '00px';
+            (document.getElementById("landing-image-container")).style.maxWidth="900px";
+            // (document.getElementById("landing-image-container")).style.marginTop="50px";
+            // (document.getElementById("landing-image-container")).style.paddingLeft="100px";
+            // (document.getElementById("landing-image-container")).style.left= '-200px';
             // (document.getElementById("landing-image-container")).style.width= '1550px';
 
             this.props.DidEnter()
@@ -83,6 +88,7 @@ export class HomeShowcase extends Component {
                   (document.getElementById("landing-image-dark")).style.opacity= 1;
                   (document.getElementById("landing-title-container")).style.opacity="1";
                   (document.getElementById("landing-title-container")).style.top="360px";
+                  
                 }
   
                 //unfix page
@@ -117,6 +123,7 @@ export class HomeShowcase extends Component {
                   <img id="enter-arrow" src={arrow} alt=""></img>
                 </div>
               </div>
+              <PoweredBy />
               </div>
             )
           }
