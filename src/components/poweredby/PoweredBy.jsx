@@ -25,26 +25,33 @@ import electroMeters from './../../img/sponsor-logos/electro-meters-logo.png';
 let sponsors = [
   {logo:mcmasterLogo,
     link:"",
-    color:"rgb(94,22,51)"},
+    color:"rgb(94,22,51)",
+    id:1},
   {logo:gmLogo,
     link:"",
-    color:"rgb(46,86,153)"},
+    color:"rgb(46,86,153)",
+    id:2},
   {logo:altiumLogo,
     link:"",
-    color:"rgb(166,151,106)"},
+    color:"rgb(166,151,106)",
+    id:3},
   {logo:amkLogo,
     link:"",
-    color:"rgb(64,151,199)"},
+    color:"rgb(64,151,199)",
+    id:4},
   {logo:dspaceLogo,
     link:"",
-    color:"rgb(22,70,145)"},
+    color:"rgb(22,70,145)",
+    id:5},
   {logo:linimarLogo,
     link:"",
-    color:"rgb(196,94,37)"},
+    color:"rgb(196,94,37)",
+    id:6},
 
   {logo:solidworksLogo,
     link:"",
-    color:"rgb(209,73,67)"},
+    color:"rgb(209,73,67)",
+    id:7},
   // {logo:benderLogo,
   //   link:"",
   // color:"rgb(54,122,60)"},
@@ -86,8 +93,20 @@ export class PoweredBy extends Component {
     super(props)
   }
 
+
+
   showComponents() {
-    document.getElementById("powered-by-container").style.opacity=.7;
+    setTimeout(() => {
+      document.getElementById("powered-by-container").style.opacity=.7;
+      // document.getElementById("powered-by-container").style.width='500px';
+      for (let i = 1; i < 8; i++){
+        setTimeout(() => {
+          try{
+          document.getElementById(`powered-by-sponsor-${i}`).style.opacity='1';
+          }catch{}
+        },300 * i);    
+      }
+    }, 500);
   }
   hideComponents() {
     document.getElementById("powered-by-container").style.opacity=0;
@@ -108,14 +127,14 @@ export class PoweredBy extends Component {
         <h1 className="powered-by-title">Powered By 
         
           <span className="powered-by-view-all">
-            <Link to="/sponsors">
-              <h1 className="view-all-text">View All</h1>
+            <Link to="/sponsors" style={{textDecoration:'none'}}>
+              <h1 id="view-all-text">View All</h1>
             </Link>
           </span>
         </h1>
         
           {sponsors.map(sponsor => (
-            <a className="powered-by-sponsor" href={sponsor.link} target="_blank" rel="noopener noreferrer"
+            <a id={`powered-by-sponsor-${sponsor.id}`} href={sponsor.link} target="_blank" rel="noopener noreferrer"
               style={{borderColor:sponsor.color,
               // boxShadow:`2px 3px 3px ${sponsor.color}`
               }}>
