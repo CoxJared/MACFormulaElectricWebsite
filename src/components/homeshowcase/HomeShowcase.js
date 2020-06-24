@@ -5,13 +5,15 @@ import darkImage from './../../img/renders/front-reeed.png';
 import lightImage from './../../img/renders/front-light.png';
 import arrow from './../../img/arrow.png'
 import PoweredBy from '../poweredby/PoweredBy';
+import InstagramShowcase from '../instagramshowcase/InstagramShowcase';
 
 export class HomeShowcase extends Component {
 
         constructor(props) {
             super(props)
             this.state ={
-              leave:false
+              leave:false,
+              entered:false
             }
           }
         
@@ -55,13 +57,14 @@ export class HomeShowcase extends Component {
             (document.getElementById("landing-image-dark")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.top= '00px';
-            (document.getElementById("landing-image-container")).style.maxWidth="900px";
-            // (document.getElementById("landing-image-container")).style.marginTop="50px";
+            (document.getElementById("landing-image-container")).style.maxWidth="800px";
+            (document.getElementById("landing-image-container")).style.marginTop="00px";
             // (document.getElementById("landing-image-container")).style.paddingLeft="100px";
             // (document.getElementById("landing-image-container")).style.left= '-200px';
             // (document.getElementById("landing-image-container")).style.width= '1550px';
 
             this.props.DidEnter()
+            this.setState({entered:true})
           }
 
           unfixPage = () => {
@@ -123,7 +126,8 @@ export class HomeShowcase extends Component {
                   <img id="enter-arrow" src={arrow} alt=""></img>
                 </div>
               </div>
-              <PoweredBy />
+              <PoweredBy show={this.state.entered}/>
+              <InstagramShowcase show={this.state.entered}/>
               </div>
             )
           }

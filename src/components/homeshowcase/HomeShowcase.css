@@ -11,10 +11,11 @@
   
     #landing-image-container {
       width:65%;
-      max-width:900px;
+      max-width:800px;
       height:100%;
       position: relative;
-      margin:50px auto;
+      margin:0px auto;
+      top:100px;
       justify-content: center;
       opacity: 0;
       transition:7s ease;
