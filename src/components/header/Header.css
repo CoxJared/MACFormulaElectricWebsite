@@ -3,7 +3,7 @@
 
     margin:0 auto;
     align-content: center;
-    position: fixed;
+    position: absolute;
     z-index: 500; 
     opacity: 1;
     transition: 1.5s;
@@ -178,7 +178,7 @@ li.dropdown {
 }
 
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 950px) {
     .logo-text {
         font-size:0px;
     }

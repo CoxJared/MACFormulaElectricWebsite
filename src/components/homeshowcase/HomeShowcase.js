@@ -58,11 +58,18 @@ export class HomeShowcase extends Component {
             (document.getElementById("landing-image-dark")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.top= '00px';
-            // (document.getElementById("landing-image-container")).style.maxWidth="800px";
+            
             (document.getElementById("landing-image-container")).style.marginTop="00px";
             // (document.getElementById("landing-image-container")).style.paddingLeft="100px";
-            (document.getElementById("landing-image-container")).style.left= '280px';
 
+            if(window.innerWidth > 1200){
+            (document.getElementById("landing-image-container")).style.maxWidth="780px";
+            (document.getElementById("landing-image-container")).style.left= '280px';
+            } else {
+              (document.getElementById("landing-image-container")).style.marginTop="5vw";
+              (document.getElementById("landing-image-container")).style.maxWidth="60vw";
+            (document.getElementById("landing-image-container")).style.left= '23vw';
+            }
             this.props.DidEnter()
             this.setState({entered:true})
           }

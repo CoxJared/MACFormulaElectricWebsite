@@ -110,8 +110,9 @@ border-bottom:1px solid rgb(80, 80, 80);
   }
   
   .team-members-container{
-    width:100%;
+    width:87%;
     margin:0 auto;
+    justify-content: center;
   }
   
   .team-member-container{
@@ -148,24 +149,24 @@ border-bottom:1px solid rgb(80, 80, 80);
   
   .team-member-linkedin-button{
     margin-top:.5vw;
-    border:2px solid rgb(98, 98, 98);
+    border:1px solid rgb(98, 98, 98);
     border-radius: 5px;
-    width:30px;
-    height:30px;
+    width:3vw;
+    height:3vw;
     transition:.5s ease-in-out;
   }
   
   .team-memebr-linkedin-name{
     color:rgb(114, 114, 114);
-    padding:1px 0 0 4px;
-    font-weight: 600;
-    font-size:21px;
+    padding:.3vw 0 0 .5vw;
+    font-weight: 6vw;
+    font-size:2vw;
     transition:.5s ease-in-out;
   }
   
   .team-member-linkedin-button:hover{
     cursor: pointer;
-    border:2px solid rgba(54, 175, 255, 0.692);
+    border:1px solid rgba(54, 175, 255, 0.692);
   }
   
   .team-member-linkedin-button:hover .team-memebr-linkedin-name{

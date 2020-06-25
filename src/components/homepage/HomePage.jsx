@@ -71,14 +71,11 @@ export class HomePage extends Component {
                 <div className="home-page-component">
                     {this.state.header}
                     <HomeShowcase 
-                    DidEnter = {this.DidEnter}
-                    didPassShowcase = {this.didPassShowcase}/>
-                    {/* <GearBoxExplosion 
-                    DidEnter = {this.DidEnter}
-                    /> */}
+                        DidEnter = {this.DidEnter}
+                        didPassShowcase = {this.didPassShowcase}/>
                     <div id="about-section-container">
                         <h2 className="about-section-text">
-                        <span>MAC Formula Electric</span> is a student run team working to design and build a fully electric, formula style racecar
+                        <span>MAC Formula Electric</span> is a student run team  from McMaster University working to design and build a fully electric, formula style racecar
                         </h2>
                     </div>
                     <PhotoSlide 
