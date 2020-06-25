@@ -156,3 +156,98 @@ h1 {
   padding:7px;
   font-family: 'Rajdhani', sans-serif;
 }
+
+
+
+@media only screen and (max-width: 1500px) {
+  /* *{border:1px solid red;} */
+
+  .sponsor-explorer-container {
+    padding-top:10vw;
+  }
+  
+  .explorer-header {
+    width:25vw;
+    margin-bottom: 3vw;
+    font-size: 5vw;
+    padding: 1vw 0 1vw 0;
+  }
+  
+  .sponsor-container {
+    padding:5vw 0;
+    width:100%;
+  }
+  
+  .sponsor{
+    width:40vw;
+    height:20vw;
+    padding:0px 0 0 1vw;
+    margin:2vw 4vw;
+  }
+  .sponsor:hover{
+  }
+  
+  .sponsors-logo {
+  }
+  
+  .sponsors-text-container{
+    padding:0px .5vw;
+    margin-left: .4vw;
+  }
+  .sponsors-text-container h1{
+    font-size: 2.2vw;
+    margin:.8vw 0;
+    padding-bottom: .4vw;
+  }
+  .sponsors-text-container h2{
+    font-size: 1.1vw;
+    }
+  
+  .sponsor {
+  }
+  
+  .sponsor-flag-pole{
+    height:1;
+    position:absolute;
+  }
+  .sponsor:hover .sponsor-flag-pole{
+  }
+  .sponsor-flag{
+    height:3vw;
+  }
+  .sponsor-flag-text{
+    font-size: 2vw;
+    margin-top: .4vw;
+  }
+  .sponsor:hover .sponsor-flag{
+    width:8vw;
+  }.sponsor:hover .sponsor-flag-text{
+  }
+  
+  
+  
+  h1 {
+  }
+  
+  .silver .sponsor{
+    width:20vw;
+  }
+  
+  .silver .sponsors-logo {
+    object-fit: contain;
+  }
+  
+  .silver .sponsors-text-container{
+  }
+  
+  .sponsor-type-heading{
+    padding-top:2vw;
+    padding-bottom: 2vw;
+    font-size: 2.5vw;
+  }
+  
+  .sponsor-type-heading span {
+    padding:.4vw;
+  }
+
+}
