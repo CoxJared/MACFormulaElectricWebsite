@@ -109,3 +109,62 @@
   opacity: 1;
 }
 
+@media only screen and (max-width: 1200px) {
+  /* *{border:1px solid blue;} */
+  .contact-page-container{
+  }
+  
+  
+  #contact-showcase{
+  }
+  
+  #contact-image{
+  }
+  .contact-showcase-gradient{
+  }
+  
+  .contact-title{
+    padding-top:14vw;
+    padding-bottom:3vw;
+    font-size:8vw;
+  }
+  
+  .contact-text-container {
+    width:90%;
+  }
+  
+  .contact-email-container{
+  }
+  .contact-email {
+    color:#fff;
+    font-size:3.5vw;
+  }
+  
+  .contact-social-media-container{
+  }
+  
+  .social-media-row{
+    /* border:1px solid red; */
+    margin-bottom:2.5vw;
+    padding-bottom:2.5vw;
+  }
+  
+  .social-media-row:hover{
+  }
+  .social-media-title{
+    font-size: 1.8vw;
+    
+  }
+  .social-media-title span{
+    font-size: 2vw;
+  }
+  .social-media-row:hover .social-media-title span{
+  }
+  
+  .social-media-white-underline{
+    bottom:-.1vw;
+    height:.2vw;
+  }
+  .social-media-row:hover .social-media-white-underline{
+  }
+}
