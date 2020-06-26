@@ -34,7 +34,7 @@ export class CompetitionShowcase extends Component {
 
     return (
       <div id="competition-showcase-container">
-        <img id = "competition-image" src={hybridTilt}></img>
+        <img id = "competition-image" src={hybridTilt} alt=""></img>
         <div className="gradient-container"/>
         <div id="competition-text-container">
           <h1 className="competition-title">Support</h1>

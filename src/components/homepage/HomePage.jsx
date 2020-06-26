@@ -10,10 +10,7 @@ import TeamLink from '../teamLink/TeamLink.jsx';
 import noseShot from './../../img/competition/nose-shot.jpeg'
 import amkBackground from './../../img/parts/amk-close.png';
 import playButton from './../../img/playButton.svg'
-import hyrbidTilt from './../../img/competition/hybrid-tilt-test.jpg'
 import teamPhoto from './../../img/hatch/team-photo.png'
-import sidePodshot from './../../img/parts/hybrid-side-pod.png';
-import GearBoxExplosion from './gearboxexplosion/GearBoxExplosion';
 import CompetitionShowcase from '../competitionshowcase/CompetitionShowcase';
 import Footer from '../footer/Footer';
 import Button from '../button/Button';
