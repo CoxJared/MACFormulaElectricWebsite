@@ -88,3 +88,41 @@
       font-weight: lighter;
       color:#777;
     }
+
+
+.minimized-subteams{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.minimized-subteams-image-container{
+  /* border:1px solid red; */
+  height:50vw;
+  width:55vw;
+}
+
+.minimized-subteams-image{
+  object-fit: fill;
+  width:100%;
+
+}
+
+.minimized-subteams-text-container{
+  /* border: 1px solid green; */
+  width:40vw;
+  padding-left: 2vw;
+}
+.minimized-subteam-name{
+color:#fff;
+padding:2vw 0 ;
+font-size:5vw;
+font-weight:600;
+}
+.minimized-subteam-description{
+  color:#fff;
+  font-size:1.5vw;
+  font-weight: 100;
+  text-align: justify;
+  line-height: 1.5em;
+}
