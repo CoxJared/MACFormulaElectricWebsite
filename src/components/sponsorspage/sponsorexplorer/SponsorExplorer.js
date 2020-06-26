@@ -13,7 +13,6 @@ import EnlitenenergyServicesLogo from './../../../img/sponsor-logos/enlitenenerg
 import FastenalLogo from './../../../img/sponsor-logos/fastenal-logo.png';
 import Fmslogo from './../../../img/sponsor-logos/fms-logo.png';
 import GeneralsealantsLogo from './../../../img/sponsor-logos/generalsealants-logo.png';
-import GmLogo from './../../../img/sponsor-logos/gm-logo.png';
 import LinimarLogo from './../../../img/sponsor-logos/linimar-logo.png';
 import MathworksLogo from './../../../img/sponsor-logos/mathworks-logo.jpeg';
 import MclarenengineeringLogo from './../../../img/sponsor-logos/mclarenengineering-logo.jpg';
