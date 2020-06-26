@@ -28,7 +28,7 @@
     }
 
       #design-text-container {
-        width:500px;
+        width:450px;
         height:600px;
         /* border:1px solid green; */
         padding:80px 20px;
@@ -39,9 +39,8 @@
         transition: .6s;
       }
       .design-text-container {
-        width:500px;
+        width:450px;
         height:600px;
-        /* border:1px solid green; */
         padding:80px 20px;
         position: relative;
       }
@@ -74,7 +73,7 @@
 
       .design-image-container {
         position: relative;
-        width:900px;
+        width:750px;
         height:500px;
         margin-top:70px;
         /* border:1px solid red; */
@@ -203,8 +202,7 @@
     }
 
 
-  @media only screen and (max-width: 1600px) {
-    /* *{border: 1px solid red;} */
+  @media only screen and (max-width: 1200px) {
 
     .design-container{
       width:100%;
@@ -236,12 +234,10 @@
             .design-text-car{
               font-size:2vw;
               padding-left:1vw;
-              /* border:1px solid blue */
             }
     
             .design-text-title{
               font-size:4vw;
-              /* border:1px solid blue; */
               margin:2vw 0 2vw;
             }
     

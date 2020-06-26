@@ -4,3 +4,87 @@
   position: relative;
   overflow:hidden; 
 }
+
+
+.minimized-design-showcase{
+  position: relative;
+  width:100%;
+  height:80vw;
+  max-height:600px;
+}
+
+.minimized-design-image-container{
+  position: relative;
+  height:65vw;
+  max-height:500px;
+  width:90%;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.minimized-image-cut{
+  position: absolute;
+  margin:5vw auto;
+  width:100%;
+  height:100%;
+  background: url('./../../img/renders/newer-cut.png');
+  background-size: cover;
+}
+
+#minimized-image-full{
+  position: absolute;
+  margin:5vw auto;
+  width:100%;
+  height:100%;
+  background: url('./../../img/renders/another-full.png');
+  background-size: cover;
+}
+
+.minimized-car-name{
+  color:#fff;
+  font-weight: 500;
+  font-size:4vw;
+  text-align: center;
+  padding-top:2vw;
+}
+
+#minimized-main-specs {
+  position: relative;
+  width:60vw;
+  margin:0 auto;
+  opacity:1;
+  height:50vw;
+  color:#fff;
+  /* border:2px solid blue; */
+}
+
+  #minimized-spec {
+    width:60vw;
+    position: relative;
+    margin:2vw auto;
+    height:5vw;
+    display: flex;
+    border-bottom:1px solid #444;
+  }
+
+    .minimized-spec-title {
+      /* border:1px solid #bbb; */
+      width:30vw;
+      font-size: 2vw;
+      font-weight:300;
+      color:#eee;
+    }
+
+    .minimized-spec-value{
+      width:30vw;
+      height:10vw;
+      /* border:1px solid blue; */
+      float:right;
+      text-align: right;
+      font-size:2vw;
+    }
+
+    .minimized-spec-value span{
+      font-weight: lighter;
+      color:#777;
+    }
