@@ -177,3 +177,32 @@
         opacity: 1;
       }
 }
+
+
+
+/* mobile showcase */
+@media only screen and (max-width: 750px) {
+  .landing-mobile{
+    width:90%;
+    margin:0 auto;
+    height:100vh;
+  }
+  .mobile-showcase-pic{
+    object-fit: contain;
+    width:100%;
+    margin-top:calc(50vh - 35vw);
+  }
+  #landing-title-container{
+    position: absolute;
+    /* border:1px solid red; */
+    width:100%;
+    margin:0;
+    left:0;
+  }
+  .landing-title{
+    font-size:10vw;
+  }
+  #landing-subtitle{
+    font-size:4vw;
+  }
+}

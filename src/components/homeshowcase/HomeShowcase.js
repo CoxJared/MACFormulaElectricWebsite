@@ -57,7 +57,12 @@ export class HomeShowcase extends Component {
           updateShowcase = () => {
             (document.getElementById("landing-image-dark")).style.opacity= 0;
             (document.getElementById("landing-title-container")).style.opacity= 0;
-            (document.getElementById("landing-title-container")).style.top= '00px';
+
+            if(window.innerWidth < 750 ){
+              (document.getElementById("landing-title-container")).style.top= '-20vw';
+            } else {
+              (document.getElementById("landing-title-container")).style.top= '00px';
+            }
             
             (document.getElementById("landing-image-container")).style.marginTop="00px";
             // (document.getElementById("landing-image-container")).style.paddingLeft="100px";
@@ -87,23 +92,11 @@ export class HomeShowcase extends Component {
           }
 
           checkScrolling = () => {
-            //if scroll down
             window.onscroll = () => {
               try{ 
                 if(window.pageYOffset > 90){
                   this.updateShowcase()
                 }
-                else{
-                  // (document.getElementById("landing-image-dark")).style.opacity= 1;
-                  // (document.getElementById("landing-title-container")).style.opacity="1";
-                  // (document.getElementById("landing-title-container")).style.top="360px";
-                  // (document.getElementById("landing-image-container")).style.left= '0';
-                  // // (document.getElementById("landing-image-container")).style.maxWidth="900px";
-                  // this.setState({entered:false});
-
-                }
-  
-                //unfix page
                 if(window.pageYOffset > 300){
                   this.unfixPage()
                 }
@@ -115,9 +108,10 @@ export class HomeShowcase extends Component {
           }
         
           render() {
-        
-            this.checkScrolling()
 
+
+            if(window.innerWidth > 750){
+            this.checkScrolling()
             return (
               <div className="landing-ether">
               <div id="landing-page-container">
@@ -138,7 +132,17 @@ export class HomeShowcase extends Component {
               
               </div>
             )
-          }
+          } else {
+            return(
+            <div className="landing-mobile">
+              <img className="mobile-showcase-pic" src={darkImage} alt=""/>
+              <div id="landing-title-container">
+                  <h1 className="landing-title">MAC Formula Electric</h1>
+                  <h2 id="landing-subtitle">Inspiring a Culture of Innovation</h2>
+                </div>
+            </div>
+            )}
+        }
 }
 
 export default HomeShowcase
