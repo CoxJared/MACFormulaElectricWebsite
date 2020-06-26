@@ -21,7 +21,7 @@ export class ContactPage extends Component {
       <div className="contact-page-container">
         <Header/>
         <div id="contact-showcase">
-          <img id="contact-image" src={hatchGarage}></img>
+          <img id="contact-image" src={hatchGarage} alt=""/>
           <h1 className="contact-title">Contact Us</h1>
           <div className="contact-showcase-gradient"></div>
           <div className="contact-text-container">

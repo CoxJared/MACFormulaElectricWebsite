@@ -47,7 +47,7 @@ componentDidMount() {
           title = 'Sponsorship Package'
           linkContainer =           
               {
-                <a href={sponsorShipPackage} target='_blank' style={{textDecoration:'none'}}>
+                <a href={sponsorShipPackage} target='_blank' rel="noopener noreferrer" style={{textDecoration:'none'}}>
               <div className="sponsorship-package-container">
 
 

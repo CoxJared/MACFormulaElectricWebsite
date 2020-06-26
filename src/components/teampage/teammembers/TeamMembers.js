@@ -18,7 +18,8 @@ export class TeamMembers extends Component {
       members:[
         {name:'Jessie Boudreau',
         photo:jessieShot,
-        position:'Team Lead'},
+        position:'Team Lead',
+        linkedin:''},
         {name:'Blaire Pauli',
         photo:blaireShot,
         position:'Mechanical Lead'},
@@ -37,7 +38,8 @@ export class TeamMembers extends Component {
         position:'Business Lead'},
         {name:'Jared Cox',
         photo:jaredShot,
-        position:'Mechanical Lead'},
+        position:'Mechanical Lead',
+      linkedin:'https://www.linkedin.com/in/jared-cox-110591149/'},
       ]
     }
   }
@@ -52,12 +54,12 @@ export class TeamMembers extends Component {
         {this.state.members.map(member => (
           <div className="team-member-container">
             <div className="team-member-image-container">
-              <img className="team-member-image" src={member.photo} />
+              <img className="team-member-image" src={member.photo} alt=""/>
             </div>
             <div className="team-member-text-container">
               <h1 className="team-member-name">{member.name}</h1>
               <h2 className="team-member-position">{member.position}</h2>
-              <a href="" style={{textDecoration:'none'}}>
+              <a href={member.linkedin} style={{textDecoration:'none'}} target ="_blank" rel="noopener noreferrer">
               <div className="team-member-linkedin-button">
                 <h1 className="team-memebr-linkedin-name">in</h1>
               </div>

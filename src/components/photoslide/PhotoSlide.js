@@ -3,15 +3,6 @@ import React, { Component } from 'react'
 import './PhotoSlide.css';
 
 export class PhotoSlide extends Component {
-constructor(props) {
-  super(props)
-}
-
-componentDidMount() {
-  // window.onscroll = function() {}
-
-    
-}
 
   render() {
 

@@ -39,7 +39,7 @@ export class DesignLink extends Component {
             <Button text="Explore"/>
           </Link>
         </div>
-        <img id="design-link-image" src={crossView} />
+        <img id="design-link-image" src={crossView} alt=""/>
       </div>
     )
   }

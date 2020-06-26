@@ -23,7 +23,7 @@ export class ShowcaseLink extends Component {
 
     return (
       <div id="showcase-link-container" >
-        <img id="showcase-link-photo"  src={this.props.backgroundImage}/>
+        <img id="showcase-link-photo"  src={this.props.backgroundImage} alt=""/>
 
         <div className="showcase-link-linked-container">
           {this.props.linkContainer}

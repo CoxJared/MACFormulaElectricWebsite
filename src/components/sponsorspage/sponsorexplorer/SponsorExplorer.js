@@ -91,6 +91,7 @@ export class SponsorExplorer extends Component {
               img: BenderLogo,
               description:"Bender GmbH & Co. KG is a top provider of electrical safety products and solution. Bender covers applications in the field of mobility for electric or hybrid vehicles, energy generation and distribution, regenerative energy extraction and applications in building technology ensuring that people, equipment, and facilities are protected with the latest in electrical safety technology.",
               color:"rgb(54,122,60)"},
+
           {id: 2,
               name: 'CpaOntario',
               websiteLink: 'https://www.cpaontario.ca/',
@@ -121,7 +122,6 @@ export class SponsorExplorer extends Component {
               img: MclarenengineeringLogo,
               description:"McLaren Engineering Group provides innovative engineering solutions to ten technical divisions including Site/Civil, Geotechnical, Marine, Bridge/Highway/Rail, Surveying, Forensics, Entertainment, Structural, Facade Engineering, and Construction Engineering. McLaren Engineering Group offers unparalleled service using Applied Ingenuity.",
               color:"rgb(178,87,52)"},
-              ,
           {id: 8,
               name: 'MES',
               websiteLink: 'http://www.macengsociety.ca/',

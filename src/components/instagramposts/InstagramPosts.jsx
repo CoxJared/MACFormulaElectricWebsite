@@ -5,9 +5,6 @@ import post1 from './../../img/instagram/post1.png';
 import post2 from './../../img/instagram/post2.JPG';
 import post3 from './../../img/instagram/post3.png';
 
-
-import InstagramEmbed from 'react-instagram-embed';
-
 export class InstagramPosts extends Component {
   render() {
     window.addEventListener('scroll', function (event) {
@@ -29,26 +26,26 @@ export class InstagramPosts extends Component {
 
     return (
       <div id="instagram-container">
-        <a target="_blank" href="https://www.instagram.com/macformulaelectric/?hl=en" style={{textDecoration:'none'}}>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/macformulaelectric/?hl=en" style={{textDecoration:'none'}}>
         <h1 className="instagram-title">@macformulaelectric
         <div className="instagram-underline"/>
         </h1>
         
         </a>
         <div className="instagram-post-container">
-          <a href="https://www.instagram.com/p/CBROzbWhKRs/" target="_blank">
+          <a href="https://www.instagram.com/p/CBROzbWhKRs/" target="_blank" rel="noopener noreferrer">
             <div className="instagram-post">
-            <img src={post1} className="instagram-image"></img>
+            <img src={post1} className="instagram-image" alt=""/>
             </div>
           </a>
-          <a href="https://www.instagram.com/p/B_KfTbjhIJg/" target="_blank">
+          <a href="https://www.instagram.com/p/B_KfTbjhIJg/" target="_blank" rel="noopener noreferrer">
             <div className="instagram-post">
-            <img src={post2} className="instagram-image"></img>
+            <img src={post2} className="instagram-image" alt=""/>
             </div>
           </a>
-          <a href="https://www.instagram.com/p/B-sZwmGhxRu/" target="_blank">
+          <a href="https://www.instagram.com/p/B-sZwmGhxRu/" target="_blank" rel="noopener noreferrer">
             <div className="instagram-post">
-            <img src={post3} className="instagram-image"></img>
+            <img src={post3} className="instagram-image" alt=""/>
             </div>
           </a>
         </div>

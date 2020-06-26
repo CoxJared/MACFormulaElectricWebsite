@@ -1,14 +1,8 @@
-import React, { Component } from 'react'
-
-import fullimage from './../../../img/renders/another-full.png'
-import cutimage from './../../../img/renders/newer-cut.png'
+import React, { Component } from 'react';
 
 import './MainShowcase.css';
 
 export class MainShowcase extends Component {
-  constructor(props){
-    super(props)
-  }
 
   componentDidMount() {
     this.initialLoad()

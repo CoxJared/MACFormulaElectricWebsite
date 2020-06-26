@@ -92,8 +92,8 @@ export class HomePage extends Component {
                         type = 'Video'
                         title = 'About Us'
                         linkContainer =           
-                            {<a href="https://www.youtube.com/watch?v=M89uLc4ShOY&t=1s" target="_blank">
-                                <img className="play-button" src={playButton}/>
+                            {<a href="https://www.youtube.com/watch?v=M89uLc4ShOY&t=1s" target="_blank" rel="noopener noreferrer">
+                                <img className="play-button" src={playButton} alt=""/>
                             </a>}
                     />
                     <DesignLink />

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c54ae15.chunk.css",
-    "main.js": "/static/js/main.e1f185cc.chunk.js",
-    "main.js.map": "/static/js/main.e1f185cc.chunk.js.map",
+    "main.css": "/static/css/main.e9b25b53.chunk.css",
+    "main.js": "/static/js/main.3d9991c1.chunk.js",
+    "main.js.map": "/static/js/main.3d9991c1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.49307197.js",
     "runtime-main.js.map": "/static/js/runtime-main.49307197.js.map",
-    "static/js/2.878edf3f.chunk.js": "/static/js/2.878edf3f.chunk.js",
-    "static/js/2.878edf3f.chunk.js.map": "/static/js/2.878edf3f.chunk.js.map",
+    "static/js/2.b492ad33.chunk.js": "/static/js/2.b492ad33.chunk.js",
+    "static/js/2.b492ad33.chunk.js.map": "/static/js/2.b492ad33.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.67894845eda83886754c8e092f603bbf.js": "/precache-manifest.67894845eda83886754c8e092f603bbf.js",
+    "precache-manifest.85a1a450ae44e9250826e9f1b00cfe68.js": "/precache-manifest.85a1a450ae44e9250826e9f1b00cfe68.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1c54ae15.chunk.css.map": "/static/css/main.1c54ae15.chunk.css.map",
-    "static/js/2.878edf3f.chunk.js.LICENSE.txt": "/static/js/2.878edf3f.chunk.js.LICENSE.txt",
+    "static/css/main.e9b25b53.chunk.css.map": "/static/css/main.e9b25b53.chunk.css.map",
+    "static/js/2.b492ad33.chunk.js.LICENSE.txt": "/static/js/2.b492ad33.chunk.js.LICENSE.txt",
     "static/media/ECE Dept logo.png": "/static/media/ECE Dept logo.d7c24181.png",
     "static/media/LOGO-Mechanical Engineering.jpg": "/static/media/LOGO-Mechanical Engineering.7da9d889.jpg",
     "static/media/MACFE_Sponsorship_package.pdf": "/static/media/MACFE_Sponsorship_package.2c1c0e13.pdf",
@@ -43,7 +43,6 @@
     "static/media/hybrid-driving.jpg": "/static/media/hybrid-driving.12bb7c14.jpg",
     "static/media/hybrid-side-pod.png": "/static/media/hybrid-side-pod.af3d127a.png",
     "static/media/hybrid-stand.jpg": "/static/media/hybrid-stand.de998673.jpg",
-    "static/media/hybrid-tilt-test.jpg": "/static/media/hybrid-tilt-test.52005729.jpg",
     "static/media/jared.jpg": "/static/media/jared.e5afa420.jpg",
     "static/media/jessie.jpg": "/static/media/jessie.55bc2518.jpg",
     "static/media/mathworks-logo.jpeg": "/static/media/mathworks-logo.d994b214.jpeg",
@@ -72,8 +71,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.49307197.js",
-    "static/js/2.878edf3f.chunk.js",
-    "static/css/main.1c54ae15.chunk.css",
-    "static/js/main.e1f185cc.chunk.js"
+    "static/js/2.b492ad33.chunk.js",
+    "static/css/main.e9b25b53.chunk.css",
+    "static/js/main.3d9991c1.chunk.js"
   ]
 }
