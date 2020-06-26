@@ -34,6 +34,7 @@ import electrometers from './../../../img/sponsor-logos/electro-meters-logo.png'
 import cooplogo from './../../../img/sponsor-logos/mcm-eng-coop-career_stack-col.png';
 import ecelogo from './../../../img/sponsor-logos/ECE Dept logo.png';
 import mechlogo from './../../../img/sponsor-logos/LOGO-Mechanical Engineering.jpg';
+import materialsLogo from './../../../img/sponsor-logos/mcmastermaterialseng.jpeg';
 
 export class SponsorExplorer extends Component {
 
@@ -41,12 +42,7 @@ export class SponsorExplorer extends Component {
     super(props)
     this.state = {
       platinum: [
-          {id: 0,
-              name: 'Altium',
-              websiteLink: 'https://www.altium.com/',
-              img: AltiumLogo,
-            description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
-        color:"rgb(166,151,106)"},
+
           {id: 1,
               name: 'AMK',
               websiteLink: 'https://amk-group.com/en/content/formula_student_electric',
@@ -59,12 +55,6 @@ export class SponsorExplorer extends Component {
               img: DspaceLogo,
               description:"dSPACE’s leading software and hardware-based simulations ensure a vehicle’s drive system is energy-efficient, the intelligent assistance systems make driving more comfortable, and that the plane they are on is safely guided to its destination.",
               color:"rgb(22,70,145)"},
-          {id: 0,
-              name: 'General Motors',
-              websiteLink: 'https://www.gm.ca/en/home.html',
-              img: GmLogo,
-              description:"The multinational corporation GM, designs, manufactures, markets, and distributes vehicles and vehicle parts. With longterm goals of creating a safer, better and more sustainable world, GM pushes the limits of transportation and technology to realize this ambition.",
-              color:"rgb(46,86,153)"},
           {id: 5,
               name: 'Linamar',
               websiteLink: 'https://www.linamar.com/',
@@ -77,27 +67,33 @@ export class SponsorExplorer extends Component {
               img: McmasterengineeringLogo,
               description:"The McMaster Faculty of Engineering is known for innovative educational programming and for its research and engagement with industry and community. Focusing on Problem-Based learning, the faculty builds strong foundations for undergraduate and graduate students.",
               color:"rgb(94,22,51)"},
-          {id: 0,
-              name: 'Solidworks',
-              websiteLink: 'https://www.solidworks.com/',
-              img: SolidworksLogo,
-              description:"SOLIDWORKS’ is a solid modelling computer-aided design (CAD) and computer-aided engineering (CAE) computer program. The program used by industry leaders provides integrated tools for every area of product development and management. Enabling enterprises to optimize processes from concepts to manufacturing.",
-              color:"rgb(209,73,67)"},
+            {id: 8,
+            name: 'MES',
+            websiteLink: 'http://www.macengsociety.ca/',
+            img: MesLogo,
+            description:"The McMaster Engineering Society fosters the development of well rounded undergraduate engineering students through accessible support of academics, athletics, and recreational and professional activities, while maintaining the integrity and unique traditions of the faculty society.",
+            color:"rgb(219,56,50)"},
+
       ],
       gold: [
-          {id: 0,
-              name: 'Bender',
-              websiteLink: 'https://www.bender-ca.com/',
-              img: BenderLogo,
-              description:"Bender GmbH & Co. KG is a top provider of electrical safety products and solution. Bender covers applications in the field of mobility for electric or hybrid vehicles, energy generation and distribution, regenerative energy extraction and applications in building technology ensuring that people, equipment, and facilities are protected with the latest in electrical safety technology.",
-              color:"rgb(54,122,60)"},
-
+        {id: 0,
+            name: 'Altium',
+            websiteLink: 'https://www.altium.com/',
+            img: AltiumLogo,
+          description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
+      color:"rgb(166,151,106)"},
           {id: 2,
               name: 'CpaOntario',
               websiteLink: 'https://www.cpaontario.ca/',
               img: CpaontarioLogo,
               description:"CPA Ontario supports members and students in their qualification and professional development in a wide range of senior positions in public accounting, business, finance, government, not-for-profits and academia. CPA Ontario protects the public interest ensuring the members meet the highest standards of expertise and the integrity of the profession.",
               color:"rgb(16,63,160)"},
+            {id: 1,
+            name: 'Electro Meters',
+            websiteLink: 'http://www.electro-meters.com/',
+            img: electrometers,
+            description:"Electro-Meters is a major distributor of Test and Measurement, portable instruments as well as Analog and Digital Panel meters. Addressing needs of technical assistance in selecting a product, CSA approval, or designing a turnkey solution, Electro-meters provides the level of support from one of Canada’s leading organizations.",
+            color:"rgb(33,81,161)"},
           {id: 11,
               name: 'Faro',
               websiteLink: 'https://www.faro.com/',
@@ -122,18 +118,18 @@ export class SponsorExplorer extends Component {
               img: MclarenengineeringLogo,
               description:"McLaren Engineering Group provides innovative engineering solutions to ten technical divisions including Site/Civil, Geotechnical, Marine, Bridge/Highway/Rail, Surveying, Forensics, Entertainment, Structural, Facade Engineering, and Construction Engineering. McLaren Engineering Group offers unparalleled service using Applied Ingenuity.",
               color:"rgb(178,87,52)"},
-          {id: 8,
-              name: 'MES',
-              websiteLink: 'http://www.macengsociety.ca/',
-              img: MesLogo,
-              description:"The McMaster Engineering Society fosters the development of well rounded undergraduate engineering students through accessible support of academics, athletics, and recreational and professional activities, while maintaining the integrity and unique traditions of the faculty society.",
-              color:"rgb(219,56,50)"},
           {id: 9,
               name: 'MSC Software',
               websiteLink: 'https://www.mscsoftware.com/',
               img: MscSoftwareLogo,
               description:"MSC Software develops simulation software technology that enables engineers to validate and optimize their designs using virtual prototypes. Customers in almost every part of manufacturing use the software to complement or replace the physical prototype “build and test” process that has traditionally been used in product design.",
               color:"rgb(235,73,60)"},
+              {id: 0,
+                name: 'Solidworks',
+                websiteLink: 'https://www.solidworks.com/',
+                img: SolidworksLogo,
+                description:"SOLIDWORKS’ is a solid modelling computer-aided design (CAD) and computer-aided engineering (CAE) computer program. The program used by industry leaders provides integrated tools for every area of product development and management. Enabling enterprises to optimize processes from concepts to manufacturing.",
+                color:"rgb(209,73,67)"},
           {id: 10,
               name: 'TE Connectivty',
               websiteLink: 'https://www.te.com/usa-en/home.html',
@@ -146,14 +142,13 @@ export class SponsorExplorer extends Component {
               img: ViGradeLogo,
               description:"VI-grade is the leading provider of best-in-class software products and services for advanced applications in the field of system level simulation. Together with a network of selected partners, VI-grade also provides revolutionary turn-key solutions for static and dynamic driving simulation.",
               color:"rgb(217,67,51)"},
-          {id: 1,
-              name: 'Electro Meters',
-              websiteLink: 'http://www.electro-meters.com/',
-              img: electrometers,
-              description:"Electro-Meters is a major distributor of Test and Measurement, portable instruments as well as Analog and Digital Panel meters. Addressing needs of technical assistance in selecting a product, CSA approval, or designing a turnkey solution, Electro-meters provides the level of support from one of Canada’s leading organizations.",
-              color:"rgb(33,81,161)"}
+
       ],
       silver: [
+        {id: 0,
+            name: 'Bender',
+            websiteLink: 'https://www.bender-ca.com/',
+            img: BenderLogo},
           {id: 1,
               name: 'Cartesian',
               websiteLink: 'https://www.cartesian.com/',
@@ -199,12 +194,19 @@ export class SponsorExplorer extends Component {
               websiteLink: 'http://www.textreme.com/',
               img: TextremLogo},  
       ],
-      software: [
+      bronze: [
           {id: 2,
               name: 'McMaster ECE',
               websiteLink: 'https://www.eng.mcmaster.ca/ece',
               img: ecelogo
           },
+          {id: 2,
+            name: 'McMaster Materials Eng',
+            websiteLink: 'https://www.eng.mcmaster.ca/ece',
+            img: materialsLogo
+        }
+    ],
+    general: [
           {id: 2,
               name: 'Oshpark',
               websiteLink: 'https://oshpark.com/',
@@ -289,7 +291,28 @@ export class SponsorExplorer extends Component {
 
             <h1 className="sponsor-type-heading"><span>Bronze Sponsors</span></h1>
             <div className="sponsor-container silver">
-              {this.state.software.map(sponsor => (
+              {this.state.bronze.map(sponsor => (
+                  <>
+                  <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
+                  <img className="sponsors-logo" src={sponsor.img} alt="platinum-sponsor"/>
+                  <div className="sponsors-text-container">
+                    <h1>{sponsor.name}</h1>
+                    <h2 className="sponsor-text-description">
+                        {sponsor.description}
+                    </h2>
+                  </div>   
+                  {/* <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div> */}
+                  <div className="sponsor-flag" style={{background:sponsor.color}}>
+                      <h1 className="sponsor-flag-text">Visit
+                          </h1></div> 
+                  </a>  
+                  </> 
+              ))}
+            </div>
+
+            <h1 className="sponsor-type-heading"><span>General Sponsors</span></h1>
+            <div className="sponsor-container silver">
+              {this.state.general.map(sponsor => (
                   <>
                   <a className="sponsor" href={sponsor.websiteLink} target="_blank" rel="noopener noreferrer">
                   <img className="sponsors-logo" src={sponsor.img} alt="platinum-sponsor"/>

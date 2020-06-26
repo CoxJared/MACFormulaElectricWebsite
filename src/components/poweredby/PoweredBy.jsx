@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import './PoweredBy.scss';
 import { Link } from 'react-router-dom';
 
-import gmLogo from './../../img/sponsor-logos/gm-logo.png';
-import altiumLogo from './../../img/sponsor-logos/altium-logo.png';
+import haasLogo from './../../img/sponsor-logos/hass-logo.png';
+import mesLogo from './../../img/sponsor-logos/mes-logo.png';
 import amkLogo from './../../img/sponsor-logos/amk-jpeg.png';
 import dspaceLogo from './../../img/sponsor-logos/dspacesquare.png';
 import linimarLogo from './../../img/sponsor-logos/linimar-logo.png';
@@ -16,27 +16,27 @@ let sponsors = [
     link:"",
     color:"rgb(94,22,51)",
     id:1},
-  {logo:gmLogo,
+  {logo:haasLogo,
     link:"",
     color:"rgb(46,86,153)",
     id:2},
-  {logo:altiumLogo,
-    link:"",
-    color:"rgb(166,151,106)",
-    id:3},
+
   {logo:amkLogo,
     link:"",
     color:"rgb(64,151,199)",
-    id:4},
-  {logo:dspaceLogo,
+    id:3},
+  {logo:mesLogo,
     link:"",
-    color:"rgb(22,70,145)",
-    id:5},
+    color:"rgb(166,151,106)",
+    id:4},
   {logo:linimarLogo,
     link:"",
     color:"rgb(196,94,37)",
+    id:5},
+  {logo:dspaceLogo,
+    link:"",
+    color:"rgb(22,70,145)",
     id:6},
-
   {logo:solidworksLogo,
     link:"",
     color:"rgb(209,73,67)",

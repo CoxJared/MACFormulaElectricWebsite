@@ -16,8 +16,6 @@ class Header extends Component{
     
 
     render() {
-        
-        
 
         var headerClass = "static-header";
         if( document.body.offsetWidth>800){
@@ -34,24 +32,23 @@ class Header extends Component{
             }
         }
         if(document.body.offsetWidth < 800) {
-
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos < (currentScrollPos +1) ) {
-            document.getElementById("toggle").checked = false;
-            if(currentScrollPos > 90)
-            {
-                (document.getElementById("header-container")).style.top="-90px";
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos < (currentScrollPos +1) ) {
+                    document.getElementById("toggle").checked = false;
+                    if(currentScrollPos > 90)
+                    {
+                        (document.getElementById("header-container")).style.top="-90px";
+                    }
+                    else{
+                        (document.getElementById("header-container")).style.top="-".concat(currentScrollPos,"px");
+                    }
+                } else {
+                    (document.getElementById("header-container")).style.top="0" ;
+                }
+                prevScrollpos = currentScrollPos;
             }
-            else{
-                (document.getElementById("header-container")).style.top="-".concat(currentScrollPos,"px");
-            }
-        } else {
-            (document.getElementById("header-container")).style.top="0" ;
-        }
-        prevScrollpos = currentScrollPos;
-        }
         }
 
         return (
