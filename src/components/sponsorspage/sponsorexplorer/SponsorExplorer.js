@@ -236,7 +236,7 @@ export class SponsorExplorer extends Component {
                         {sponsor.description}
                     </h2>
                   </div>   
-                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  {/* <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div> */}
                   <div className="sponsor-flag" style={{background:sponsor.color}}>
                       <h1 className="sponsor-flag-text">Visit
                           </h1></div> 
@@ -257,7 +257,7 @@ export class SponsorExplorer extends Component {
                         {sponsor.description}
                     </h2>
                   </div>   
-                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  {/* <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div> */}
                   <div className="sponsor-flag" style={{background:sponsor.color}}>
                       <h1 className="sponsor-flag-text">Visit
                           </h1></div> 
@@ -278,7 +278,7 @@ export class SponsorExplorer extends Component {
                         {sponsor.description}
                     </h2>
                   </div>   
-                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  {/* <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div> */}
                   <div className="sponsor-flag" style={{background:sponsor.color}}>
                       <h1 className="sponsor-flag-text">Visit
                           </h1></div> 
@@ -299,7 +299,7 @@ export class SponsorExplorer extends Component {
                         {sponsor.description}
                     </h2>
                   </div>   
-                  <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div>
+                  {/* <div className="sponsor-flag-pole" style={{background:sponsor.color}}></div> */}
                   <div className="sponsor-flag" style={{background:sponsor.color}}>
                       <h1 className="sponsor-flag-text">Visit
                           </h1></div> 

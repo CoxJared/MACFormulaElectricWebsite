@@ -1,3 +1,8 @@
+.team-page-container{
+  width:100%;
+  overflow: hidden;
+}
+
 .team-photo-container{
   width:100%;
   height:auto;

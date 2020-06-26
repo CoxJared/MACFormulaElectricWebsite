@@ -1,5 +1,5 @@
 *{
-  /* border:1px solid red; */
+  
 }
 #sponsorship-top-showcase{
   width:100%;
@@ -8,6 +8,7 @@
   opacity: 0;
   transition:1s;
   position: relative;
+  /* border:1px solid red; */
 }
 
 #sponsorship-top-showcase-image{
