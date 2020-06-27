@@ -16,7 +16,7 @@
     top:-0px;
     transition:top 5s ease-in-out;
     width: 100%;
-    max-width:1200px;
+    /* max-width:1200px; */
     height: 85px;
     color:#fff;
     margin:0 auto;

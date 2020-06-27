@@ -37,7 +37,7 @@ export class HomePage extends Component {
         console.log("yrd")
         this.setState({
             entered: true,
-            header:<Header></Header>
+            header:<Header />
         })
     }
 
@@ -66,7 +66,8 @@ export class HomePage extends Component {
 
             return (
                 <div className="home-page-component">
-                    {this.state.header}
+                    {/* {this.state.header} */}
+                    <Header />
                     <HomeShowcase 
                         DidEnter = {this.DidEnter}
                         didPassShowcase = {this.didPassShowcase}/>

@@ -56,7 +56,10 @@ export class HomeShowcase extends Component {
               document.getElementById("enter-arrow").style.opacity="1"
               setTimeout(
                   function(){
-                      document.getElementById("enter-arrow").style.opacity="0"},1000);
+                    try{
+                      document.getElementById("enter-arrow").style.opacity="0";
+                    }catch{}
+                  },1000)
                   }catch{}
                   },4000)
                 

@@ -107,7 +107,13 @@ class Header extends Component{
                     <input type="checkbox" id="toggle"></input>
                     <div className="hamburger"><div>
                     </div></div>
-                    <ul className="nav-bar">               
+                    <ul className="nav-bar">    
+                        {window.innerWidth < 800 ? 
+                            <li className={`nav-bar-item ${this.pageIsSelected("home", this.props.page)}`}>
+                                <Link to="/">Home</Link>
+                                <div className="white-hover-bar"></div>
+                            </li> 
+                            : <div/>}
                         <li className={`nav-bar-item ${this.pageIsSelected("about", this.props.page)}`}>
                              <Link to="/design">Design</Link>
                              <div className="white-hover-bar"></div>

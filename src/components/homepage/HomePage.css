@@ -83,3 +83,12 @@
         margin-left:-3vw;
       }
   }
+
+  @media only screen and (max-width: 800px) {
+    #about-section-container{
+        height:50vw;
+    }
+    #about-section-container h2 {
+        font-size:4vw;
+    }
+  }
