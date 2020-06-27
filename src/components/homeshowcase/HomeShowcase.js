@@ -19,10 +19,12 @@ export class HomeShowcase extends Component {
         
           componentDidMount() {
             window.scrollTo(0, 0)
-        
+          } 
+
+          imageDidLoad() {
             this.updateElements()
             this.moveArrow()
-          } 
+          }
         
           updateElements() {
             setTimeout(
@@ -117,7 +119,7 @@ export class HomeShowcase extends Component {
               <div id="landing-page-container">
                 <div id="landing-image-container">
                   <img id="landing-image" src={lightImage} alt=""/>
-                  <img id="landing-image-dark" src={darkImage} alt=""/>
+                  <img id="landing-image-dark" src={darkImage} alt="" onLoad={this.imageDidLoad()}/>
                 </div>
                 <div id="landing-title-container">
                   <h1 className="landing-title">MAC Formula Electric</h1>
