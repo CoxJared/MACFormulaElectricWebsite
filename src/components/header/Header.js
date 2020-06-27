@@ -24,11 +24,13 @@ class Header extends Component{
 
 
         if( document.body.offsetWidth>800){
-            try{
-            }catch{}
+
 
             headerClass = "header"
             window.onscroll = function() {
+
+
+
                 try{
                 var currentScrollPos = window.pageYOffset;
 
@@ -54,13 +56,24 @@ class Header extends Component{
                 else{
                     (document.getElementById("header")).style.top="0" ;
                 }
+
+
+
+
+
             }catch{}
             prevScrollpos = currentScrollPos;
+
+
+
             } 
         }
         if(document.body.offsetWidth < 800) {
             
             window.onscroll = function() {
+
+
+
                 var currentScrollPos = window.pageYOffset;
                 if (prevScrollpos < (currentScrollPos +1) ) {
                     document.getElementById("toggle").checked = false;
