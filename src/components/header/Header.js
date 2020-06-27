@@ -18,21 +18,48 @@ class Header extends Component{
     render() {
 
         var headerClass = "static-header";
+
+        var prevScrollpos = window.pageYOffset;
+        
+
+
         if( document.body.offsetWidth>800){
+            try{
+            }catch{}
+
             headerClass = "header"
             window.onscroll = function() {
                 try{
                 var currentScrollPos = window.pageYOffset;
-                if(currentScrollPos > 50)
+
+                if(window.pageYOffset > 90){
+                    (document.getElementById("header")).style.backgroundColor="rgba(0,0,0,1)";
+                } else {
+                    (document.getElementById("header")).style.backgroundColor="rgba(0,0,0,0)";
+                }
+
+
+                if(prevScrollpos < (currentScrollPos +1) )
                 {
+                    console.log('hi');
+                    if(currentScrollPos > 90)
+                    {
+                        (document.getElementById("header")).style.top="-90px";
+                        
+                    }
+                    else{
+                        
+                    }
                 }
                 else{
+                    (document.getElementById("header")).style.top="0" ;
                 }
             }catch{}
-            }
+            prevScrollpos = currentScrollPos;
+            } 
         }
         if(document.body.offsetWidth < 800) {
-            var prevScrollpos = window.pageYOffset;
+            
             window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
                 if (prevScrollpos < (currentScrollPos +1) ) {

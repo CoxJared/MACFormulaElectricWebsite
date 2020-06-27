@@ -12,7 +12,7 @@
 
 #header  {
     display: flex;
-    position: relative;
+    position: fixed;
     top:-0px;
     transition:top 5s ease-in-out;
     width: 100%;
@@ -21,8 +21,10 @@
     color:#fff;
     margin:0 auto;
     transition: color 2s ease;
-    transition: background-color .5s ease;
+    transition: .5s ease;
     opacity: .98;
+    /* background: #000; */
+    transition: .5s ease-in-out;
 }
 #static-header {
     display: flex;
@@ -195,7 +197,7 @@ li.dropdown {
     }
     #static-header {
         height:70px;
-        box-shadow: 1px 1px 1px #bbb
+        /* box-shadow: 1px 1px 1px #bbb */
     }
     .logo {
         padding-left:25px;
@@ -251,6 +253,7 @@ li.dropdown {
         line-height: 31px;
         display: block;
         border: 1px solid rgb(0, 0, 0);
+        color:#fff;
         border-radius: 0;
     }
     .nav-bar a:hover {
