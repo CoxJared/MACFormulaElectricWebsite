@@ -13,7 +13,8 @@ export class HomeShowcase extends Component {
             super(props)
             this.state ={
               leave:false,
-              entered:false
+              entered:false,
+              loaded:false
             }
           }
         
@@ -22,6 +23,11 @@ export class HomeShowcase extends Component {
           } 
 
           imageDidLoad() {
+            if(!this.state.loaded) {
+              this.setState({loaded: true})
+            }
+          }
+          initialLoad() {
             this.updateElements()
             this.moveArrow()
           }
@@ -110,7 +116,9 @@ export class HomeShowcase extends Component {
           }
         
           render() {
-
+            if(this.state.loaded && !this.state.entered) {
+              this.initialLoad();
+            }
 
             if(window.innerWidth > 750){
             this.checkScrolling()
