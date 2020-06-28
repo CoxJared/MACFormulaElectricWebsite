@@ -190,7 +190,7 @@
   .mobile-showcase-pic{
     object-fit: contain;
     width:100%;
-    margin-top:calc(50vh - 35vw);
+    margin-top:calc(50vh - 60vw);
   }
   #landing-title-container{
     position: absolute;
@@ -204,5 +204,27 @@
   }
   #landing-subtitle{
     font-size:4vw;
+  }
+
+  #mobile-landing-title-container{
+    /* border:1px solid red; */
+    position: relative;
+    top:-24vh;
+  }
+
+  .mobile-landing-title{
+    
+
+    font-family: 'Rajdhani', sans-serif;
+    color:#fff;
+    font-size:9vw;
+    text-align:center;
+  }
+
+  #mobile-landing-subtitle{
+    color:#fff;
+    font-size:3vw;
+    font-weight: 100;
+    text-align: center;
   }
 }

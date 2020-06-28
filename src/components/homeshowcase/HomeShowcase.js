@@ -151,9 +151,9 @@ export class HomeShowcase extends Component {
               return(
               <div className="landing-mobile">
                 <img className="mobile-showcase-pic" src={darkImage} alt=""/>
-                <div id="landing-title-container">
-                    <h1 className="landing-title">MAC Formula Electric</h1>
-                    <h2 id="landing-subtitle">Inspiring a Culture of Innovation</h2>
+                <div id="mobile-landing-title-container">
+                    <h1 className="mobile-landing-title">MAC Formula Electric</h1>
+                    <h2 id="mobile-landing-subtitle">Inspiring a Culture of Innovation</h2>
                   </div>
               </div>
               )}
