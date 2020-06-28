@@ -79,3 +79,37 @@ $lightFontWeight:100;
     transition:2s ease-out;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  $textColor:#fff;
+  $lightFontWeight:100;
+  
+  #design-link-container{
+    width:100%;
+    height:75vw;
+  }
+  
+  #design-link-text-container{
+    margin-top:20vw;
+    width:55%;
+    padding: 2vw 0vw 0 2vw;
+  }
+  
+  .design-link-title{
+    font-size:5vw;
+  }
+  
+  .design-link-text{
+    margin-top:3vw;
+    margin-bottom: 2vw;
+    font-size: 2.5vw;
+  }
+  
+  #design-link-image{
+    object-fit: cover;
+    position: relative;
+    width:55%;
+    left:50px;
+    transition:2s ease-out;
+  }
+}

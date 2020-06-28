@@ -22,6 +22,8 @@ export class DesignLink extends Component {
 
             if(this.window.innerWidth >1500){
               document.getElementById("design-link-text-container").style.marginTop='200px';
+            } else if(this.window.innerWidth >1500){
+              document.getElementById("design-link-text-container").style.marginTop='10vw';
             } else {
               document.getElementById("design-link-text-container").style.marginTop='10vw';
             }
