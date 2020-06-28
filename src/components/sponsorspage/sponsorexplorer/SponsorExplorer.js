@@ -208,7 +208,7 @@ export class SponsorExplorer extends Component {
           },
           {id: 2,
             name: 'McMaster Materials Eng',
-            websiteLink: 'https://www.eng.mcmaster.ca/ece',
+            websiteLink: 'https://www.eng.mcmaster.ca/materials',
             img: materialsLogo
         }
     ],
