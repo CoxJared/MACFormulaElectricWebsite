@@ -163,3 +163,65 @@
   .team-link-button:hover .team-link-white{
   }
 }
+
+@media only screen and (max-width: 1500px) {
+  #photoslide-container-2{
+    width:100vw;
+    height:50vh;
+    margin:5vw auto;
+    padding:4vw 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+    .white-line{
+      width:1300px;
+      height:4vw;
+    }
+    .white-line div{
+    }
+  
+    #description-container-2{
+      width: 80vw;
+      height:50vw;
+    }
+  
+      #photoslide-title-2{
+        font-size:5vw;
+      }
+  
+      #photoslide-description-2{
+        font-size:2.5vw;
+      }
+  
+    .photoslide-image-container-2{
+      width:80vw;
+      height:30vw;
+      margin-right:3vw;
+      margin-top:4vw;
+    }
+  
+      .photoslide-image-2{
+      }
+  
+  .team-link-button{
+    position: relative;
+    width:16vw;
+    height:5vw;
+    border:1px solid #aaa;
+    margin-top:1vw;
+  }
+  .team-link-button:hover{
+    cursor: pointer;
+  }
+  .team-link-title{
+    font-size: 2vw;
+    padding-top:.8vw;
+  }
+  .team-link-button:hover .team-link-title{
+  }
+  .team-link-white{
+  }
+  .team-link-button:hover .team-link-white{
+  }
+}
