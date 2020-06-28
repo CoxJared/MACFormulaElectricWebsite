@@ -5,6 +5,7 @@ import Header from '../header/Header';
 import PhotoSlide from '../photoslide/PhotoSlide';
 import ShowcaseLink from '../showcaselink/ShowcaseLink';
 import TeamLink from '../teamLink/TeamLink.jsx';
+import LoadingSpinner from '../loadingspinner/LoadingSpinner';
 
 
 import noseShot from './../../img/competition/nose-shot.jpeg'
@@ -17,12 +18,15 @@ import Button from '../button/Button';
 import InstagramPosts from '../instagramposts/InstagramPosts';
 import DesignLink from '../designlink/DesignLink';
 
+import darkToLoad from './../../img/renders/showcase-red.png';
+
 
 export class HomePage extends Component {
     constructor (props){
         super(props)
 
         this.state = {
+            loaded: false,
             entered: false,
             // header:<div/>,
             header:<div />,
@@ -31,6 +35,10 @@ export class HomePage extends Component {
     }
     componentDidMount() {
         window.scrollTo(0, 0)
+    }
+
+    imagesDidLoad = () => {
+        this.setState({loaded:true});
     }
 
     DidEnter =  () => {
@@ -71,9 +79,17 @@ export class HomePage extends Component {
                     <Button text="Explore"/>
                 </a> : <div/>
 
+
+            if(!this.state.loaded){
+                return( 
+                    <div className="loading-page">
+                        <LoadingSpinner />
+                        <img src={darkToLoad} styl={{opacity:0}} alt="" onLoad={this.imagesDidLoad}/>
+                    </div>
+                )
+            }
             return (
                 <div className="home-page-component">
-                    {/* {this.state.header} */}
                     <Header />
                     <HomeShowcase 
                         DidEnter = {this.DidEnter}
