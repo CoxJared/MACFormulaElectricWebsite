@@ -57,7 +57,7 @@ export class SponsorExplorer extends Component {
               color:"rgb(22,70,145)"},
               {id: 1,
                 name: 'Haas',
-                websiteLink: 'https://amk-group.com/en/content/formula_student_electric',
+                websiteLink: 'https://www.haascnc.com/index.html',
                 img: haasLogo,
                 description:"Haas Automation is the largest machine tool builder in the western world, manufacturing a complete line of CNC vertical machining centers, horizontal machining centers, CNC lathes, and rotary products. To ensure accuracy, Haas manufactures all critical components in-house using dedicated state-of-the-art CNC machine tools.",
                 color:"rgb(217,54,66)"},

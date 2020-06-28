@@ -17,7 +17,7 @@ let sponsors = [
     color:"rgb(94,22,51)",
     id:1},
   {logo:haasLogo,
-    link:"https://amk-group.com/en/content/formula_student_electric",
+    link:"https://www.haascnc.com/index.html",
     color:"rgb(46,86,153)",
     id:2},
 
