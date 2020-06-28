@@ -64,6 +64,13 @@ export class HomePage extends Component {
                 
               }
 
+            let photoSlideLink = window.innerWidth > 600 ?
+                <a href={"https://www.sae.org/attend/student-events"} 
+                    style={{ textDecoration:'none', paddingLeft:'50px'}}
+                    target="_blank" rel="noopener noreferrer">
+                    <Button text="Explore"/>
+                </a> : <div/>
+
             return (
                 <div className="home-page-component">
                     {/* {this.state.header} */}
@@ -81,13 +88,7 @@ export class HomePage extends Component {
                     title="Formula SAE Electric"
                     name="opening"
                     text="Formula SAE and Formula Student challenge students to build a single seat, open wheeled racecar to compete against other schools at annual international competitions. There are many areas of evaluation in these competitions including engineering design, business and cost as well as numerous dynamic events."
-                    button = {
-                        <a href={"https://www.sae.org/attend/student-events"} 
-                        style={{ textDecoration:'none', paddingLeft:'50px'}}
-                        target="_blank" rel="noopener noreferrer">
-                        <Button text="Explore"/>
-                        </a>}/> 
-                    
+                    button = {photoSlideLink}/>   
                     <ShowcaseLink 
                         backgroundImage = {amkBackground}
                         type = 'Video'

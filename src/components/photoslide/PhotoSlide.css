@@ -101,10 +101,51 @@
         width:48vw;
         height:40vw;
         margin-left:2vw;
-        /* border: 1px solid beige; */
       }
     
         .photoslide-image{
         }
     
+  }
+
+  @media only screen and (max-width: 1500px) {
+    #photoslide-container{
+      /* border: 1px solid beige; */
+      padding:4vw 0;
+      width:100vw;
+      height:60vh;
+    }
+    
+      .white-line{
+        height:20px;
+        /* border: 1px solid beige; */
+      }
+      .white-line div{
+        height:20px
+      }
+    
+      #description-container{
+        height:30vw;
+        width:48vw;
+        padding-top:1vw;
+        /* border: 1px solid beige; */
+      }
+    
+        #photoslide-title{
+          font-size: 5.2vw;
+          padding:1vw 0 0 0;
+        }
+    
+        #photoslide-description{
+          font-size: 2.5vw;
+        }
+    
+      .photoslide-image-container{
+        width:48vw;
+        height:40vw;
+        margin-left:2vw;
+      }
+    
+        .photoslide-image{
+        }
   }

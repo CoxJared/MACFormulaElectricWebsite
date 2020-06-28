@@ -143,3 +143,56 @@ position: relative;
   .sponsorship-button:hover .sponsorship-button-white{
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+#competition-showcase-container{
+}
+
+#competition-image {
+  width:calc(100vw + 50px);
+}
+#competition-text-container {
+  top:3vw;
+/* border:1px solid green; */
+  margin-left:5vw;
+}
+.competition-title{
+  font-size:5vw;
+  
+}
+.competition-text{
+  color:#fff;
+  margin-top:2vw;
+  line-height: 1.6em;
+  width:40vw;
+  font-size:2.5vw;
+}
+.competition-text span{
+}
+
+.gradient-container{
+}
+
+.sponsorship-button{
+  border: 1px solid #fff;
+  width:25vw;
+  height:7vw;
+  margin-top:3vw;
+}
+.sponsorship-button:hover {
+}
+
+.sponsorship-button-text{
+  padding-top:1.8vw;
+  font-size:2.5vw;
+}
+
+.sponsorship-button:hover .sponsorship-button-text{
+}
+
+.sponsorship-button-white{
+}
+.sponsorship-button:hover .sponsorship-button-white{
+}
+}
