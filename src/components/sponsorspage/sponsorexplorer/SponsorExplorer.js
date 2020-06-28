@@ -56,7 +56,7 @@ export class SponsorExplorer extends Component {
               description:"dSPACE’s leading software and hardware-based simulations ensure a vehicle’s drive system is energy-efficient, the intelligent assistance systems make driving more comfortable, and that the plane they are on is safely guided to its destination.",
               color:"rgb(22,70,145)"},
               {id: 1,
-                name: 'Hass',
+                name: 'Haas',
                 websiteLink: 'https://amk-group.com/en/content/formula_student_electric',
                 img: haasLogo,
                 description:"Haas Automation is the largest machine tool builder in the western world, manufacturing a complete line of CNC vertical machining centers, horizontal machining centers, CNC lathes, and rotary products. To ensure accuracy, Haas manufactures all critical components in-house using dedicated state-of-the-art CNC machine tools.",

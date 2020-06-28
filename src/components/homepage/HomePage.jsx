@@ -19,6 +19,7 @@ import InstagramPosts from '../instagramposts/InstagramPosts';
 import DesignLink from '../designlink/DesignLink';
 
 import darkToLoad from './../../img/renders/showcase-red.png';
+import lightToLoad from './../../img/renders/showcase-light.png';
 
 
 export class HomePage extends Component {
@@ -26,7 +27,8 @@ export class HomePage extends Component {
         super(props)
 
         this.state = {
-            loaded: false,
+            darkLoaded: false,
+            lightLoaded: false,
             entered: false,
             // header:<div/>,
             header:<div />,
@@ -37,8 +39,12 @@ export class HomePage extends Component {
         window.scrollTo(0, 0)
     }
 
-    imagesDidLoad = () => {
-        this.setState({loaded:true});
+    lightLoaded = () => {
+        this.setState({lightLoaded:true})
+    }
+
+    darkLoaded = () => {
+        this.setState({darkLoaded:true});
     }
 
     DidEnter =  () => {
@@ -80,11 +86,12 @@ export class HomePage extends Component {
                 </a> : <div/>
 
 
-            if(!this.state.loaded){
+            if(!this.state.darkLoaded || !this.state.lightLoaded){
                 return( 
                     <div className="loading-page">
                         <LoadingSpinner />
-                        <img src={darkToLoad} styl={{opacity:0}} alt="" onLoad={this.imagesDidLoad}/>
+                        <img src={darkToLoad} style={{opacity:0}} alt="" onLoad={this.darkLoaded}/>
+                        <img src={lightToLoad} style={{opacity:0}} alt="" onLoad={this.lightLoaded}/>
                     </div>
                 )
             }
