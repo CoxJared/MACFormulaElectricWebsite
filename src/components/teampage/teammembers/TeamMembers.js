@@ -2,12 +2,10 @@ import React, { Component } from 'react'
 
 import './TeamMembers.css'
 
-import jaredShot from './../../../img/team-members/jared.jpg';
+import darakShot from './../../../img/team-members/dharak.jpg';
 import blaireShot from './../../../img/team-members/blaire.jpg';
-import jessieShot from './../../../img/team-members/jessie.jpg';
 import scottShot from './../../../img/team-members/scott.jpg';
 import dylanShot from './../../../img/team-members/dylan.jpg';
-import harjotshot from './../../../img/team-members/harjot.jpg';
 import ashleyShot from './../../../img/team-members/ashley.jpeg';
 
 
@@ -16,34 +14,27 @@ export class TeamMembers extends Component {
     super()
     this.state = {
       members:[
-        {name:'Jessie Boudreau',
-        photo:jessieShot,
-        position:'Team Lead',
-        linkedin:'https://www.linkedin.com/in/jessie-boudreau-46203ba5/'},
         {name:'Blaire Pauli',
         photo:blaireShot,
-        position:'Mechanical Lead',
+        position:'Team Captain & Chief Mechanical Engineer',
         linkedin:'https://www.linkedin.com/in/blaire-pauli-735842155/'},
         {name:'Scott Suthland',
         photo:scottShot,
-        position:'Electrical Lead',
+        position:'Team Captain & Chief Electrical Engineer',
         linkedin:'https://www.linkedin.com/in/suthes1/'},
-        {name:'Dylan Boudreau',
-        photo:dylanShot,
-        position:'Vehicle Dynamics Lead',
-        linkedin:"https://www.linkedin.com/in/dylan-boudreau/"},
-        {name:'Harjot Nijjar',
-        photo:harjotshot,
-        position:'Controls Lead',
-        linkedin:'https://www.linkedin.com/in/harjotnijjar/'},
         {name:'Ashley Majnaric',
         photo:ashleyShot,
-        position:'Business Lead',
+        position:'Team Manager',
         linkedin:'https://www.linkedin.com/in/ashleymajnaric/'},
-        {name:'Jared Cox',
-        photo:jaredShot,
-        position:'Mechanical Lead',
-      linkedin:'https://www.linkedin.com/in/jared-cox-110591149/'},
+        {name:'Dharak Verma',
+        photo:darakShot,
+        position:'Engineering Manager',
+        linkedin:'https://www.linkedin.com/in/vermad1/'},
+        {name:'Dylan Boudreau',
+        photo:dylanShot,
+        position:'Engineering Manager',
+        linkedin:"https://www.linkedin.com/in/dylan-boudreau/"},
+        
       ]
     }
   }
