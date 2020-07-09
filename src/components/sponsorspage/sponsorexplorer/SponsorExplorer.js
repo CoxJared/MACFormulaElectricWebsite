@@ -4,9 +4,11 @@ import './SponsorExplorer.css'
 
 import AltiumLogo from './../../../img/sponsor-logos/altium-logo.png';
 import AmkLogo from './../../../img/sponsor-logos/amk-logo.svg';
+import AnsysLogo from './../../../img/sponsor-logos/ansys-logo.jpg';
 import BenderLogo from './../../../img/sponsor-logos/bender-logo.jpg';
 import CartesianLogo from './../../../img/sponsor-logos/cartesian-logo.png';
 import CpaontarioLogo from './../../../img/sponsor-logos/cpaontario-logo.png'
+import DeltaLogo from './../../../img/sponsor-logos/delta-logo.jpg';
 import DiabLogo from './../../../img/sponsor-logos/diab-logo.jpeg';
 import DspaceLogo from './../../../img/sponsor-logos/dspace_logo.png';
 import EnlitenenergyServicesLogo from './../../../img/sponsor-logos/enlitenenergyservices-logo.png';
@@ -35,6 +37,9 @@ import ecelogo from './../../../img/sponsor-logos/ECE Dept logo.png';
 import mechlogo from './../../../img/sponsor-logos/LOGO-Mechanical Engineering.jpg';
 import materialsLogo from './../../../img/sponsor-logos/mcmastermaterialseng.jpeg';
 import haasLogo from './../../../img/sponsor-logos/hass-logo.png';
+import PhoenixContactLogo from './../../../img/sponsor-logos/phoenix-contact-logo.png';
+import HakkoLogo from './../../../img/sponsor-logos/hakko-logo.jpg';
+
 
 export class SponsorExplorer extends Component {
 
@@ -88,6 +93,12 @@ export class SponsorExplorer extends Component {
             img: AltiumLogo,
           description:"Industry leading PCB design software that empowers users to design boards without limits—from single PCB to multi-board systems; from low frequency to high-speed.",
       color:"rgb(166,151,106)"},
+      {id: 0,
+        name: 'ANSYS',
+        websiteLink: 'https://www.ansys.com/',
+        img: AnsysLogo,
+        description:"Ansys is a global company based in Pennsylvania, that develops multiphysics engineering simulation software for product design, testing and operation. They offer a comprehensive software package providing access to virtually any field of engineering simulation that a design process requires. Ansys CFD goes beyond qualitative results to deliver accurate quantitative predictions of fluid interactions and trade-offs.",
+        color:"rgb(245,184,70)"},
           {id: 2,
               name: 'CpaOntario',
               websiteLink: 'https://www.cpaontario.ca/',
@@ -136,12 +147,6 @@ export class SponsorExplorer extends Component {
                 img: SolidworksLogo,
                 description:"SOLIDWORKS’ is a solid modelling computer-aided design (CAD) and computer-aided engineering (CAE) computer program. The program used by industry leaders provides integrated tools for every area of product development and management. Enabling enterprises to optimize processes from concepts to manufacturing.",
                 color:"rgb(209,73,67)"},
-          {id: 10,
-              name: 'TE Connectivty',
-              websiteLink: 'https://www.te.com/usa-en/home.html',
-              img: TeLogo,
-              description:"TE Connectivity partners with customers to produce highly engineered connectivity and sensing products that make a connected world possible. Specialized for harsh environments in a variety of industries, TE Connectivity enables companies to turn ideas into technology.",
-              color:"rgb(229,146,52)"},
           {id: 1,
               name: 'ViGrade',
               websiteLink: 'https://www.vi-grade.com/',
@@ -159,6 +164,10 @@ export class SponsorExplorer extends Component {
               name: 'Cartesian',
               websiteLink: 'https://www.cartesian.com/',
               img: CartesianLogo},
+              {id: 3,
+                name: 'Delta',
+                websiteLink: 'http://www.deltaww.com/',
+                img: DeltaLogo},
           {id: 3,
               name: 'Diab',
               websiteLink: 'https://www.diabgroup.com/',
@@ -175,6 +184,10 @@ export class SponsorExplorer extends Component {
               name: 'FMS',
               websiteLink: 'https://www.fmsinc.com/',
               img: Fmslogo},
+              {id: 9,
+                name: 'Hakko',
+                websiteLink: 'https://www.hakko.com/',
+                img: HakkoLogo},  
           {id: 9,
               name: 'Hoosier',
               websiteLink: 'https://www.hoosiertire.com/',
@@ -191,10 +204,18 @@ export class SponsorExplorer extends Component {
               name: 'OCTOPUZ inc.',
               websiteLink: 'https://octopuz.com/',
               img: OctopuzLogo},
+              {id: 6,
+                name: 'Phoenix Contact',
+                websiteLink: 'https://www.phoenixcontact.com/online/portal/ca?1dmy&urile=wcm:path:/caen/web/home',
+                img: PhoenixContactLogo},
           {id: 7,
               name: 'Samuel',
               websiteLink: 'https://www.samuel.com/',
               img: SamuelLogo},   
+              {id: 10,
+                name: 'TE Connectivty',
+                websiteLink: 'https://www.te.com/usa-en/home.html',
+                img: TeLogo},
           {id: 8,
               name: 'Textreme',
               websiteLink: 'http://www.textreme.com/',
