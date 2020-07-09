@@ -39,6 +39,7 @@ import materialsLogo from './../../../img/sponsor-logos/mcmastermaterialseng.jpe
 import haasLogo from './../../../img/sponsor-logos/hass-logo.png';
 import PhoenixContactLogo from './../../../img/sponsor-logos/phoenix-contact-logo.png';
 import HakkoLogo from './../../../img/sponsor-logos/hakko-logo.jpg';
+import JmpLogo from './../../../img/sponsor-logos/jmp-solutions-logo.jpeg';
 
 
 export class SponsorExplorer extends Component {
@@ -192,6 +193,10 @@ export class SponsorExplorer extends Component {
               name: 'Hoosier',
               websiteLink: 'https://www.hoosiertire.com/',
               img: HoosierLogo},  
+            {id: 9,
+            name: 'JMP Solutions',
+            websiteLink: 'https://www.jmpsolutions.com/',
+            img: JmpLogo},  
           {id: 9,
               name: 'Coop and Career Services',
               websiteLink: 'https://www.eng.mcmaster.ca/co-op-career/co-op-program',
