@@ -34,7 +34,7 @@ export class CrossView extends Component {
       <div id="cross-view-container">
         <div id="cross-view-text-container">
           <h1 className="cross-view-title">Innovation</h1>
-          <h2 className="cross-view-text">MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.  This includes features such as a carbon fibre monocoque, custom PCBs and torqu vectoring!</h2>
+          <h2 className="cross-view-text">MAC Formula Electric prides itself for being on the cutting edge of motorsport technology by implementing techniques and design features which are rarely seen in anything other than premier racing series.  This includes features such as a carbon fibre monocoque, custom PCBs and torque vectoring!</h2>
         </div>
         <img id="cross-view-image" src={crossView} alt=""/>
       </div>
