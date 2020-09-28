@@ -26,17 +26,20 @@ export class Recruitment extends Component {
 
     updatePage = (newPage) => {
         this.setState({ page: newPage });
+        window.scrollTo(0, 0);
     };
 
     updatePositionPage = (showPosition) => {
         this.setState({ positionToshow: showPosition });
         this.updatePage('position');
         console.log('yup');
+        window.scrollTo(0, 0);
     };
 
     returnToListings = () => {
         console.log('yoooo');
         this.setState({ page: 'positions' });
+        window.scrollTo(0, 0);
     };
 
     imageLoaded = () => {

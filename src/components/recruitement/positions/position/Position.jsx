@@ -15,7 +15,8 @@ export class Position extends Component {
     }
 
     componentDidMount() {
-        window.scrollTo(0, scrollValue);
+        // window.scrollTo(0, scrollValue);
+        window.scrollTo(0, 0);
     }
 
     openApplication = () => {
@@ -69,12 +70,14 @@ export class Position extends Component {
                             {this.props.position.openings}
                         </span>{' '}
                     </h2>
-                    <h1
-                        className="position-back-button"
-                        onClick={this.exitApplication}
-                    >
-                        back to positions
-                    </h1>
+                    <div className="positions-back-button-container">
+                        <h1
+                            className="position-back-button"
+                            onClick={this.exitApplication}
+                        >
+                            back to positions
+                        </h1>
+                    </div>
 
                     <h1 className="position-posting-heading">Description</h1>
                     {this.props.position.description.map((para) => (
