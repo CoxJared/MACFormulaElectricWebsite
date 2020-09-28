@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oxygen', sans-serif; 
+  font-family: 'Oxygen', sans-serif;
   /* border:2px solid blue; */
 }
 
@@ -12,8 +12,9 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
-  background:#000;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  /* background:#000; */
 }
 
 code {

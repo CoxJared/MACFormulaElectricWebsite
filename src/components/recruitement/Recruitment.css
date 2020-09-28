@@ -1,0 +1,13 @@
+.recruitment-page-container {
+    min-height: calc(100vh - 520px);
+    margin-top: min(100px, 5vh);
+    /* background-color: rgb(245, 245, 245); */
+}
+
+
+.position-full-container {
+    border: 1px solid red;
+    position: relative;
+    max-width: 100%;
+    background-color: rgb(245, 245, 245);
+}
