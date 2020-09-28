@@ -16,7 +16,7 @@ export class TeamShowcase extends Component {
             if (window.innerWidth > 1200) {
                 document.getElementById(
                     'team-showcase-text-container'
-                ).style.top = '-55vh';
+                ).style.top = '-550px';
             } else {
                 document.getElementById(
                     'team-showcase-text-container'
