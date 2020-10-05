@@ -16,7 +16,7 @@ export class TeamShowcase extends Component {
             if (window.innerWidth > 1200) {
                 document.getElementById(
                     'team-showcase-text-container'
-                ).style.top = '-550px';
+                ).style.top = '-450px';
             } else {
                 document.getElementById(
                     'team-showcase-text-container'
@@ -40,14 +40,14 @@ export class TeamShowcase extends Component {
                         shown throw prominent logo placement on our vehicle and
                         direct engagement with our team members.
                     </h2>
-                    <div className="recruitment-link-container">
+                    {/* <div className="recruitment-link-container">
                         <Link
                             style={{ textDecoration: 'none' }}
                             to="/recruitment"
                         >
                             <Button text="View Openings"></Button>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );
