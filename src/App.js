@@ -8,28 +8,24 @@ import SponsorsPage from './components/sponsorspage/SponsorsPage.jsx';
 import ContactPage from './components/contactpage/ContactPage.jsx';
 import Recruitment from './components/recruitement/Recruitment';
 
-
 function App() {
-  return (
-
-    <Router>
-      <link href="https://fonts.googleapis.com/css?family=Rajdhani:520,600|Ubuntu&display=swap" rel="stylesheet" />
-      <div className="app">
-        <Route exact path="/"
-          component={HomePage} />
-        <Route exact path="/design"
-          component={DesignPage} />
-        <Route exact path="/team"
-          component={TeamPage} />
-        <Route exact path="/sponsors"
-          component={SponsorsPage} />
-        <Route exact path="/contact"
-          component={ContactPage} />
-        <Route exact path="/recruitment"
-          component={Recruitment} />
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <link
+                href="https://fonts.googleapis.com/css?family=Rajdhani:520,600|Ubuntu&display=swap"
+                rel="stylesheet"
+            />
+            <div className="app">
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/design" component={DesignPage} />
+                <Route exact path="/team" component={TeamPage} />
+                <Route exact path="/sponsors" component={SponsorsPage} />
+                <Route exact path="/contact" component={ContactPage} />
+                {/* <Route exact path="/recruitment"
+          component={Recruitment} /> */}
+            </div>
+        </Router>
+    );
 }
 
 export default App;
